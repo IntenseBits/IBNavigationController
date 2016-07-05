@@ -1,0 +1,6 @@
+framework module IBNavigationController {
+	umbrella header "IBNavController.h"
+	
+	export *
+	module * { export * }
+}
