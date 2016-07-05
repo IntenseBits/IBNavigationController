@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A16710DE196A5D8341F64F884A3C1653DF7CF777",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A16710DE196A5D8341F64F884A3C1653DF7CF777" : 0,
+    "413A89D0DF2154760F24623F98BAD5FABC3AE123" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9110F04D-DFA8-4E54-B132-D0251FFF6AEC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A16710DE196A5D8341F64F884A3C1653DF7CF777" : "IBNavigationController\/",
+    "413A89D0DF2154760F24623F98BAD5FABC3AE123" : "..\/..\/utility-frameworks"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "IBNavigationController",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "IBNavigationController.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "herbertmunch.unfuddle.com:herbertmunch\/utility-frameworks.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "413A89D0DF2154760F24623F98BAD5FABC3AE123"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:IntenseBits\/IBNavigationController.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A16710DE196A5D8341F64F884A3C1653DF7CF777"
+    }
+  ]
+}
