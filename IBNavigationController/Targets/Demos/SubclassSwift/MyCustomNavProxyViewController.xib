@@ -95,7 +95,7 @@
                                                 <font key="font" metaFont="system" size="38"/>
                                                 <string key="title">Child
 View Controller Container</string>
-                                                <color key="textColor" red="0.63137500000000002" green="0.63137500000000002" blue="0.63137500000000002" alpha="0.45918269229999997" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
@@ -106,7 +106,7 @@ View Controller Container</string>
                                             </constraints>
                                             <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" title="Copy this nib into your projects bundle and customise :)" id="pLh-dB-ddz">
                                                 <font key="font" metaFont="system" size="20"/>
-                                                <color key="textColor" red="0.052041663189999997" green="0.39468328209999998" blue="0.75836311499999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>

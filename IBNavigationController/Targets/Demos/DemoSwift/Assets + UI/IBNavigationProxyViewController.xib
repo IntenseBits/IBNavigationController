@@ -15,6 +15,7 @@
                 <outlet property="button2" destination="8kh-hU-02t" id="bvY-Kh-chf"/>
                 <outlet property="containerView" destination="r11-Pv-crP" id="uj9-mk-S99"/>
                 <outlet property="lbTitle" destination="jKB-Ss-l6P" id="Fou-HP-qM1"/>
+                <outlet property="stackViewRightButtons" destination="rQi-pp-g5b" id="AWf-6N-AJY"/>
                 <outlet property="topBar" destination="was-lL-oqz" id="SXO-hb-1wF"/>
                 <outlet property="view" destination="hPH-dN-5od" id="cUL-Ee-u5L"/>
             </connections>
@@ -75,7 +76,7 @@
                                 </customSpacing>
                             </stackView>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jKB-Ss-l6P">
-                                <rect key="frame" x="199.5" y="8.5" width="40" height="22"/>
+                                <rect key="frame" x="199" y="8" width="40" height="22"/>
                                 <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Title" usesSingleLineMode="YES" id="VJO-Pz-Lxj">
                                     <font key="font" metaFont="system" size="18"/>
                                     <color key="textColor" red="1" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
