@@ -135,24 +135,24 @@ View Controller Container</string>
                                 <view translatesAutoresizingMaskIntoConstraints="NO" id="d7R-s9-6U4" customClass="IBView">
                                     <rect key="frame" x="30" y="10" width="375" height="38"/>
                                     <subviews>
-                                        <stackView distribution="fillEqually" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="raP-uw-im8">
-                                            <rect key="frame" x="8" y="8" width="359" height="21"/>
+                                        <stackView distribution="fillEqually" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" misplaced="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="raP-uw-im8">
+                                            <rect key="frame" x="8" y="7" width="359" height="22"/>
                                             <subviews>
-                                                <button verticalHuggingPriority="750" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="UKH-PK-Bvp">
-                                                    <rect key="frame" x="-6" y="-7" width="187.5" height="32"/>
-                                                    <buttonCell key="cell" type="push" title="Button 1" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xlC-uR-lAX">
+                                                <button verticalHuggingPriority="750" misplaced="YES" tag="1" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UKH-PK-Bvp">
+                                                    <rect key="frame" x="0.0" y="-2" width="176" height="25"/>
+                                                    <buttonCell key="cell" type="roundTextured" title="Button 1" bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xlC-uR-lAX">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                        <font key="font" size="12" name="ArialMT"/>
+                                                        <font key="font" metaFont="system"/>
                                                     </buttonCell>
                                                     <connections>
                                                         <action selector="buttonPressed:" target="-2" id="HiR-VN-Yex"/>
                                                     </connections>
                                                 </button>
-                                                <button verticalHuggingPriority="750" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="14a-S5-eFu">
-                                                    <rect key="frame" x="177.5" y="-7" width="187.5" height="32"/>
-                                                    <buttonCell key="cell" type="push" title="Button 2" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Atj-JE-Qv9">
+                                                <button verticalHuggingPriority="750" misplaced="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="14a-S5-eFu">
+                                                    <rect key="frame" x="184" y="-2" width="176" height="25"/>
+                                                    <buttonCell key="cell" type="roundTextured" title="Button 2" bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Atj-JE-Qv9">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                        <font key="font" size="12" name="ArialMT"/>
+                                                        <font key="font" metaFont="system"/>
                                                     </buttonCell>
                                                     <connections>
                                                         <action selector="buttonPressed:" target="-2" id="8rk-1X-yOA"/>

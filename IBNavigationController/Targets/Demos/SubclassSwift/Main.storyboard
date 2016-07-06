@@ -80,6 +80,9 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                 <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </customView>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="IDR-Yk-ulY" userLabel="Detail Container" customClass="IBView">
@@ -147,7 +150,7 @@
                                                 <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="20"/>
+                                                <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </customView>
@@ -181,14 +184,14 @@
             <objects>
                 <viewController title="Toolbar Buttons" id="4Mr-if-IXa" customClass="ViewController" customModule="SubclassSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="J6p-Tg-xoJ">
-                        <rect key="frame" x="0.0" y="0.0" width="554" height="498"/>
+                        <rect key="frame" x="0.0" y="0.0" width="522" height="498"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="0B6-51-9EJ" userLabel="Container">
-                                <rect key="frame" x="0.0" y="0.0" width="554" height="498"/>
+                                <rect key="frame" x="0.0" y="0.0" width="522" height="498"/>
                                 <subviews>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="pL3-C6-kQK" userLabel="Image Container" customClass="IBView">
-                                        <rect key="frame" x="26" y="186" width="502" height="302"/>
+                                        <rect key="frame" x="10" y="186" width="502" height="302"/>
                                         <subviews>
                                             <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hTF-91-U0I">
                                                 <rect key="frame" x="1" y="1" width="500" height="300"/>
@@ -209,10 +212,13 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                 <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </customView>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="pvu-BO-Lz9" userLabel="Detail Container" customClass="IBView">
-                                        <rect key="frame" x="26" y="10" width="502" height="150"/>
+                                        <rect key="frame" x="10" y="10" width="502" height="150"/>
                                         <subviews>
                                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="syX-LX-7dX">
                                                 <rect key="frame" x="98" y="51" width="306" height="57"/>
@@ -260,20 +266,19 @@
                                                 <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="20"/>
+                                                <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </customView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pL3-C6-kQK" secondAttribute="trailing" constant="10" id="6FE-Eq-fSj"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pL3-C6-kQK" secondAttribute="trailing" id="6FE-Eq-fSj"/>
                                     <constraint firstItem="pvu-BO-Lz9" firstAttribute="leading" secondItem="pL3-C6-kQK" secondAttribute="leading" id="GCC-6y-LBs"/>
                                     <constraint firstItem="pL3-C6-kQK" firstAttribute="centerX" secondItem="0B6-51-9EJ" secondAttribute="centerX" id="JUU-RE-GOg"/>
                                     <constraint firstItem="pL3-C6-kQK" firstAttribute="top" secondItem="0B6-51-9EJ" secondAttribute="top" constant="10" id="dco-O3-t71"/>
                                     <constraint firstItem="pvu-BO-Lz9" firstAttribute="top" relation="greaterThanOrEqual" secondItem="pL3-C6-kQK" secondAttribute="bottom" constant="10" id="hfM-s2-y5B"/>
                                     <constraint firstItem="pvu-BO-Lz9" firstAttribute="trailing" secondItem="pL3-C6-kQK" secondAttribute="trailing" id="iB5-uw-u9p"/>
                                     <constraint firstAttribute="bottom" secondItem="pvu-BO-Lz9" secondAttribute="bottom" constant="10" id="rga-eA-dPg"/>
-                                    <constraint firstItem="pL3-C6-kQK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0B6-51-9EJ" secondAttribute="leading" constant="10" id="ve3-1f-4Pi"/>
                                 </constraints>
                             </customView>
                         </subviews>
@@ -326,6 +331,9 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                 <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </customView>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="Spu-uz-lij" userLabel="Detail Container" customClass="IBView">
@@ -377,7 +385,7 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="20"/>
+                                                <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </customView>
@@ -387,10 +395,9 @@
                                     <constraint firstItem="vWZ-ph-eUv" firstAttribute="top" secondItem="5jx-m4-vuh" secondAttribute="top" constant="10" id="8DG-se-VUQ"/>
                                     <constraint firstItem="Spu-uz-lij" firstAttribute="leading" secondItem="vWZ-ph-eUv" secondAttribute="leading" id="8VO-IP-rkQ"/>
                                     <constraint firstItem="vWZ-ph-eUv" firstAttribute="centerX" secondItem="5jx-m4-vuh" secondAttribute="centerX" id="APU-jx-gZo"/>
-                                    <constraint firstItem="vWZ-ph-eUv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5jx-m4-vuh" secondAttribute="leading" constant="10" id="Qdo-tw-p31"/>
+                                    <constraint firstItem="vWZ-ph-eUv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5jx-m4-vuh" secondAttribute="leading" id="Qdo-tw-p31"/>
                                     <constraint firstItem="Spu-uz-lij" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vWZ-ph-eUv" secondAttribute="bottom" constant="10" id="ldm-sF-s8a"/>
                                     <constraint firstItem="Spu-uz-lij" firstAttribute="trailing" secondItem="vWZ-ph-eUv" secondAttribute="trailing" id="rhQ-mB-MYq"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vWZ-ph-eUv" secondAttribute="trailing" constant="10" id="tKh-gx-O9s"/>
                                 </constraints>
                             </customView>
                             <button hidden="YES" verticalHuggingPriority="750" tag="1001" translatesAutoresizingMaskIntoConstraints="NO" id="k3t-RD-fqH">
@@ -466,6 +473,9 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                 <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </customView>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="iLN-kJ-qo9" userLabel="Detail Container" customClass="IBView">
@@ -519,7 +529,7 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="20"/>
+                                                <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </customView>
@@ -528,8 +538,7 @@
                                     <constraint firstItem="iLN-kJ-qo9" firstAttribute="trailing" secondItem="luI-oa-q6V" secondAttribute="trailing" id="4ry-vz-NgX"/>
                                     <constraint firstItem="iLN-kJ-qo9" firstAttribute="leading" secondItem="luI-oa-q6V" secondAttribute="leading" id="9nz-86-ATH"/>
                                     <constraint firstItem="luI-oa-q6V" firstAttribute="top" secondItem="eG7-Ya-o5T" secondAttribute="top" constant="10" id="GHz-yq-avs"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="luI-oa-q6V" secondAttribute="trailing" constant="10" id="PJM-Eu-2gV"/>
-                                    <constraint firstItem="luI-oa-q6V" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eG7-Ya-o5T" secondAttribute="leading" constant="10" id="VOm-Vp-fIM"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="luI-oa-q6V" secondAttribute="trailing" id="PJM-Eu-2gV"/>
                                     <constraint firstItem="luI-oa-q6V" firstAttribute="centerX" secondItem="eG7-Ya-o5T" secondAttribute="centerX" id="c1s-k2-OR7"/>
                                     <constraint firstItem="iLN-kJ-qo9" firstAttribute="top" relation="greaterThanOrEqual" secondItem="luI-oa-q6V" secondAttribute="bottom" constant="10" id="dG2-6t-60g"/>
                                     <constraint firstAttribute="bottom" secondItem="iLN-kJ-qo9" secondAttribute="bottom" constant="10" id="hCD-DU-fmN"/>
@@ -596,6 +605,9 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                 <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </customView>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="kOu-8n-7Gv" userLabel="Detail Container" customClass="IBView">
@@ -649,18 +661,17 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="20"/>
+                                                <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </customView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="CuQ-uT-3Hi" firstAttribute="top" secondItem="DId-oc-pab" secondAttribute="top" constant="10" id="5x3-rJ-9P3"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CuQ-uT-3Hi" secondAttribute="trailing" constant="10" id="UNg-nw-Rrs"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CuQ-uT-3Hi" secondAttribute="trailing" id="UNg-nw-Rrs"/>
                                     <constraint firstAttribute="bottom" secondItem="kOu-8n-7Gv" secondAttribute="bottom" constant="10" id="cG7-7t-7t9"/>
                                     <constraint firstItem="CuQ-uT-3Hi" firstAttribute="centerX" secondItem="DId-oc-pab" secondAttribute="centerX" id="fZ2-fF-4Xf"/>
                                     <constraint firstItem="kOu-8n-7Gv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="CuQ-uT-3Hi" secondAttribute="bottom" constant="10" id="h9H-aM-0ed"/>
-                                    <constraint firstItem="CuQ-uT-3Hi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DId-oc-pab" secondAttribute="leading" constant="10" id="ieQ-4m-0Tu"/>
                                     <constraint firstItem="kOu-8n-7Gv" firstAttribute="trailing" secondItem="CuQ-uT-3Hi" secondAttribute="trailing" id="rIb-0N-mwE"/>
                                     <constraint firstItem="kOu-8n-7Gv" firstAttribute="leading" secondItem="CuQ-uT-3Hi" secondAttribute="leading" id="ydJ-LD-OBV"/>
                                 </constraints>
@@ -778,6 +789,9 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                 <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </customView>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="6mY-At-f80" userLabel="Detail Container" customClass="IBView">
@@ -830,16 +844,18 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="backgroundColour">
                                                 <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </customView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="6mY-At-f80" firstAttribute="trailing" secondItem="CVF-xc-GbB" secondAttribute="trailing" id="3VW-tx-YEp"/>
                                     <constraint firstItem="CVF-xc-GbB" firstAttribute="top" secondItem="fXs-HJ-zrB" secondAttribute="top" constant="10" id="Cca-3O-hKk"/>
-                                    <constraint firstItem="CVF-xc-GbB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fXs-HJ-zrB" secondAttribute="leading" constant="10" id="Ia7-Iz-e3F"/>
                                     <constraint firstItem="6mY-At-f80" firstAttribute="leading" secondItem="CVF-xc-GbB" secondAttribute="leading" id="MDb-hU-7Gs"/>
                                     <constraint firstItem="6mY-At-f80" firstAttribute="top" relation="greaterThanOrEqual" secondItem="CVF-xc-GbB" secondAttribute="bottom" constant="10" id="eZt-Sz-XMK"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CVF-xc-GbB" secondAttribute="trailing" constant="10" id="gRW-S4-DyS"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CVF-xc-GbB" secondAttribute="trailing" id="gRW-S4-DyS"/>
                                     <constraint firstItem="CVF-xc-GbB" firstAttribute="centerX" secondItem="fXs-HJ-zrB" secondAttribute="centerX" id="tP6-lI-DvD"/>
                                     <constraint firstAttribute="bottom" secondItem="6mY-At-f80" secondAttribute="bottom" constant="10" id="vtD-EZ-L9A"/>
                                 </constraints>
