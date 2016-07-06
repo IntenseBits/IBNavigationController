@@ -10,7 +10,10 @@ import Cocoa
 
 class ViewController: NSViewController {
 
-	override func viewDidLoad() {
+	
+	
+	override func viewDidLoad()
+	{
 		super.viewDidLoad()
 
 		// Do any additional setup after loading the view.
@@ -22,8 +25,15 @@ class ViewController: NSViewController {
 				let vc = self.storyboard!.instantiateControllerWithIdentifier("CodeViewController") as! NSViewController
 				self.navController.pushViewController(vc, animated: true)
 			}
+//			else if button.tag == 2
+//			{
+//				We dont do anything in this demo
+//			}
 		}
 	}
+	
+	
+	
 
 	override var representedObject: AnyObject? {
 		didSet {

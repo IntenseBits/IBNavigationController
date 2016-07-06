@@ -33,7 +33,9 @@
 	[alert runModal];
 }
 
-- (void)viewDidLoad {
+
+- (void)viewDidLoad
+{
 	[super viewDidLoad];
 
 	// Do any additional setup after loading the view.
@@ -44,11 +46,18 @@
 		if (button.tag == 1)
 		{
 			
-			NSViewController* vc = [self.storyboard instantiateControllerWithIdentifier:@"CodeViewController"];
+			NSViewController* vc =
+			[self.storyboard instantiateControllerWithIdentifier:@"CodeViewController"];
 			[self.navController pushViewController:vc animated:YES];
 		}
+//		else if(button.tag == 2)
+//		{
+//			We dont do anything in this demo
+//		}
 	};
 }
+
+
 
 - (void)setRepresentedObject:(id)representedObject {
 	[super setRepresentedObject:representedObject];
