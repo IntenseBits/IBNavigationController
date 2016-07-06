@@ -26,7 +26,7 @@
             <rect key="frame" x="0.0" y="0.0" width="435" height="390"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <box title="Box" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="was-lL-oqz">
+                <box title="Box" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="was-lL-oqz" customClass="IBView">
                     <rect key="frame" x="-3" y="352" width="441" height="40"/>
                     <view key="contentView" id="vNu-7K-uHm">
                         <rect key="frame" x="1" y="1" width="439" height="38"/>

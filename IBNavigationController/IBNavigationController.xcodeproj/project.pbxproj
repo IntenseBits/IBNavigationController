@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		830491E81D2D4F4B005830CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830491E71D2D4F4B005830CF /* Main.storyboard */; };
+		830491E91D2D7D8C005830CF /* MyCustomNavProxyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832412AC1D28079700551F81 /* MyCustomNavProxyViewController.xib */; };
 		832412271D27F3AA00551F81 /* BFNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8324121D1D27F3AA00551F81 /* BFNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		832412281D27F3AA00551F81 /* BFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8324121E1D27F3AA00551F81 /* BFNavigationController.m */; };
 		832412291D27F3AA00551F81 /* BFViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8324121F1D27F3AA00551F81 /* BFViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -55,7 +56,6 @@
 		832412A41D27F63700551F81 /* XViewController+IBNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8324126D1D27F4AE00551F81 /* XViewController+IBNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		832412A51D27F6C200551F81 /* IBNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 832412601D27F4AE00551F81 /* IBNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		832412AA1D28018A00551F81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832412A61D27FEA600551F81 /* Main.storyboard */; };
-		832412AD1D28079700551F81 /* MyCustomNavProxyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832412AC1D28079700551F81 /* MyCustomNavProxyViewController.xib */; };
 		832412B01D280C7000551F81 /* NSView+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 832412AE1D280C7000551F81 /* NSView+Helpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		832412B11D280C7000551F81 /* NSView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 832412AF1D280C7000551F81 /* NSView+Helpers.m */; };
 		832412B91D280FE200551F81 /* IBView.h in Headers */ = {isa = PBXBuildFile; fileRef = 832412B71D280FE200551F81 /* IBView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -578,7 +578,7 @@
 			files = (
 				832412841D27F55F00551F81 /* SwiftAssets.xcassets in Resources */,
 				832412811D27F55400551F81 /* Assets.xcassets in Resources */,
-				832412AD1D28079700551F81 /* MyCustomNavProxyViewController.xib in Resources */,
+				830491E91D2D7D8C005830CF /* MyCustomNavProxyViewController.xib in Resources */,
 				830491E81D2D4F4B005830CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

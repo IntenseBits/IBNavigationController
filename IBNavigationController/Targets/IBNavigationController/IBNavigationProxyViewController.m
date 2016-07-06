@@ -11,8 +11,9 @@
 
 @interface IBNavigationProxyViewController ()
 @property (weak) IBOutlet X_STACKVIEW *stackViewRightButtons;
-
 @property (weak) IBOutlet X_LABEL *lbTitle;
+
+
 
 #ifdef IB_TARGET_PLATFORM_MAC
 #else

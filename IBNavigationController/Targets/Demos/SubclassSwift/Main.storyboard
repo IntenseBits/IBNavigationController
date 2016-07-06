@@ -514,7 +514,7 @@
         <!--Custom Views-->
         <scene sceneID="EJw-sX-p06">
             <objects>
-                <viewController title="Custom Views" storyboardIdentifier="CustomViews" id="dfy-mW-sws" customClass="ViewController" customModule="SubclassSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Custom Views" storyboardIdentifier="CustomViews" id="dfy-mW-sws" sceneMemberID="viewController">
                     <view key="view" id="zVy-zr-td0">
                         <rect key="frame" x="0.0" y="0.0" width="554" height="498"/>
                         <autoresizingMask key="autoresizingMask"/>
