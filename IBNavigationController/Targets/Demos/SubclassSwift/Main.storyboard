@@ -52,14 +52,14 @@
             <objects>
                 <viewController title="Welcome!" id="PKU-2u-8gA" sceneMemberID="viewController">
                     <view key="view" id="Qs4-O3-jBO">
-                        <rect key="frame" x="0.0" y="0.0" width="554" height="498"/>
+                        <rect key="frame" x="0.0" y="0.0" width="554" height="482"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="IhE-Vd-hmq" userLabel="Container">
-                                <rect key="frame" x="0.0" y="0.0" width="554" height="498"/>
+                                <rect key="frame" x="0.0" y="0.0" width="554" height="482"/>
                                 <subviews>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="eJb-cN-QUn" userLabel="Image Container" customClass="IBView">
-                                        <rect key="frame" x="26" y="186" width="502" height="302"/>
+                                        <rect key="frame" x="26" y="170" width="502" height="302"/>
                                         <subviews>
                                             <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qm2-lT-Rtc">
                                                 <rect key="frame" x="1" y="1" width="500" height="300"/>
@@ -137,7 +137,7 @@
                                             <constraint firstItem="wVt-IL-TV6" firstAttribute="centerX" secondItem="IDR-Yk-ulY" secondAttribute="centerX" id="W5d-0m-mTB"/>
                                             <constraint firstItem="btc-gc-LLr" firstAttribute="leading" secondItem="IDR-Yk-ulY" secondAttribute="leading" constant="100" id="XoC-vg-PNG"/>
                                             <constraint firstItem="btc-gc-LLr" firstAttribute="top" secondItem="atJ-0a-eFr" secondAttribute="bottom" constant="5" id="b49-sR-FkM"/>
-                                            <constraint firstAttribute="height" constant="150" id="vV7-u6-ZmT"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="vV7-u6-ZmT"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="backgroundColour">
@@ -160,7 +160,7 @@
                                     <constraint firstItem="eJb-cN-QUn" firstAttribute="top" secondItem="IhE-Vd-hmq" secondAttribute="top" constant="10" id="G2X-Xu-6sd"/>
                                     <constraint firstItem="IDR-Yk-ulY" firstAttribute="leading" secondItem="eJb-cN-QUn" secondAttribute="leading" id="G5L-aZ-AZS"/>
                                     <constraint firstAttribute="bottom" secondItem="IDR-Yk-ulY" secondAttribute="bottom" constant="10" id="UPm-NR-XAb"/>
-                                    <constraint firstItem="IDR-Yk-ulY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="eJb-cN-QUn" secondAttribute="bottom" constant="10" id="URx-OY-emb"/>
+                                    <constraint firstItem="IDR-Yk-ulY" firstAttribute="top" secondItem="eJb-cN-QUn" secondAttribute="bottom" constant="10" id="URx-OY-emb"/>
                                     <constraint firstItem="IDR-Yk-ulY" firstAttribute="trailing" secondItem="eJb-cN-QUn" secondAttribute="trailing" id="VX5-An-mmP"/>
                                     <constraint firstItem="eJb-cN-QUn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IhE-Vd-hmq" secondAttribute="leading" constant="10" id="lan-3U-irx"/>
                                     <constraint firstItem="eJb-cN-QUn" firstAttribute="centerX" secondItem="IhE-Vd-hmq" secondAttribute="centerX" id="nLQ-3r-myO"/>
@@ -184,14 +184,14 @@
             <objects>
                 <viewController title="Toolbar Buttons" id="4Mr-if-IXa" customClass="ViewController" customModule="SubclassSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="J6p-Tg-xoJ">
-                        <rect key="frame" x="0.0" y="0.0" width="522" height="498"/>
+                        <rect key="frame" x="0.0" y="0.0" width="522" height="482"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="0B6-51-9EJ" userLabel="Container">
-                                <rect key="frame" x="0.0" y="0.0" width="522" height="498"/>
+                                <rect key="frame" x="0.0" y="0.0" width="522" height="482"/>
                                 <subviews>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="pL3-C6-kQK" userLabel="Image Container" customClass="IBView">
-                                        <rect key="frame" x="10" y="186" width="502" height="302"/>
+                                        <rect key="frame" x="10" y="170" width="502" height="302"/>
                                         <subviews>
                                             <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hTF-91-U0I">
                                                 <rect key="frame" x="1" y="1" width="500" height="300"/>
@@ -250,7 +250,7 @@
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="syX-LX-7dX" secondAttribute="trailing" constant="100" id="Xsr-KQ-DGe"/>
                                             <constraint firstItem="Oy1-al-Qyu" firstAttribute="centerX" secondItem="pvu-BO-Lz9" secondAttribute="centerX" id="YjD-WQ-S5E"/>
-                                            <constraint firstAttribute="height" constant="150" id="mdZ-Z1-chM"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="mdZ-Z1-chM"/>
                                             <constraint firstItem="syX-LX-7dX" firstAttribute="top" secondItem="Oy1-al-Qyu" secondAttribute="bottom" constant="5" id="r92-yJ-MGl"/>
                                             <constraint firstItem="syX-LX-7dX" firstAttribute="leading" secondItem="pvu-BO-Lz9" secondAttribute="leading" constant="100" id="sMd-fa-5SW"/>
                                             <constraint firstItem="Oy1-al-Qyu" firstAttribute="top" secondItem="pvu-BO-Lz9" secondAttribute="top" constant="10" id="yP7-9x-Jm5"/>
@@ -272,11 +272,11 @@
                                     </customView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pL3-C6-kQK" secondAttribute="trailing" id="6FE-Eq-fSj"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pL3-C6-kQK" secondAttribute="trailing" constant="10" id="6FE-Eq-fSj"/>
                                     <constraint firstItem="pvu-BO-Lz9" firstAttribute="leading" secondItem="pL3-C6-kQK" secondAttribute="leading" id="GCC-6y-LBs"/>
                                     <constraint firstItem="pL3-C6-kQK" firstAttribute="centerX" secondItem="0B6-51-9EJ" secondAttribute="centerX" id="JUU-RE-GOg"/>
                                     <constraint firstItem="pL3-C6-kQK" firstAttribute="top" secondItem="0B6-51-9EJ" secondAttribute="top" constant="10" id="dco-O3-t71"/>
-                                    <constraint firstItem="pvu-BO-Lz9" firstAttribute="top" relation="greaterThanOrEqual" secondItem="pL3-C6-kQK" secondAttribute="bottom" constant="10" id="hfM-s2-y5B"/>
+                                    <constraint firstItem="pvu-BO-Lz9" firstAttribute="top" secondItem="pL3-C6-kQK" secondAttribute="bottom" constant="10" id="hfM-s2-y5B"/>
                                     <constraint firstItem="pvu-BO-Lz9" firstAttribute="trailing" secondItem="pL3-C6-kQK" secondAttribute="trailing" id="iB5-uw-u9p"/>
                                     <constraint firstAttribute="bottom" secondItem="pvu-BO-Lz9" secondAttribute="bottom" constant="10" id="rga-eA-dPg"/>
                                 </constraints>
@@ -303,14 +303,14 @@
             <objects>
                 <viewController title="Handling Clicks" storyboardIdentifier="CodeViewController" id="4VX-A2-7bM" sceneMemberID="viewController">
                     <view key="view" identifier="CodeView" id="uiD-zg-rER">
-                        <rect key="frame" x="0.0" y="0.0" width="554" height="498"/>
+                        <rect key="frame" x="0.0" y="0.0" width="554" height="482"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="5jx-m4-vuh" userLabel="Container">
-                                <rect key="frame" x="0.0" y="0.0" width="554" height="498"/>
+                                <rect key="frame" x="0.0" y="0.0" width="554" height="482"/>
                                 <subviews>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="vWZ-ph-eUv" userLabel="Image Container" customClass="IBView">
-                                        <rect key="frame" x="26" y="186" width="502" height="302"/>
+                                        <rect key="frame" x="26" y="170" width="502" height="302"/>
                                         <subviews>
                                             <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dGh-Im-Ism">
                                                 <rect key="frame" x="1" y="1" width="500" height="300"/>
@@ -367,7 +367,7 @@
                                             </textField>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="6I0-Xh-WLL"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="6I0-Xh-WLL"/>
                                             <constraint firstItem="33f-qh-lWI" firstAttribute="top" secondItem="Spu-uz-lij" secondAttribute="top" constant="10" id="MNX-Ng-HSV"/>
                                             <constraint firstItem="HWZ-GK-ScN" firstAttribute="leading" secondItem="Spu-uz-lij" secondAttribute="leading" constant="100" id="OxH-dM-uwg"/>
                                             <constraint firstAttribute="trailing" secondItem="HWZ-GK-ScN" secondAttribute="trailing" constant="100" id="q6E-lJ-L4f"/>
@@ -395,13 +395,13 @@
                                     <constraint firstItem="vWZ-ph-eUv" firstAttribute="top" secondItem="5jx-m4-vuh" secondAttribute="top" constant="10" id="8DG-se-VUQ"/>
                                     <constraint firstItem="Spu-uz-lij" firstAttribute="leading" secondItem="vWZ-ph-eUv" secondAttribute="leading" id="8VO-IP-rkQ"/>
                                     <constraint firstItem="vWZ-ph-eUv" firstAttribute="centerX" secondItem="5jx-m4-vuh" secondAttribute="centerX" id="APU-jx-gZo"/>
-                                    <constraint firstItem="vWZ-ph-eUv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5jx-m4-vuh" secondAttribute="leading" id="Qdo-tw-p31"/>
-                                    <constraint firstItem="Spu-uz-lij" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vWZ-ph-eUv" secondAttribute="bottom" constant="10" id="ldm-sF-s8a"/>
+                                    <constraint firstItem="vWZ-ph-eUv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5jx-m4-vuh" secondAttribute="leading" constant="10" id="Qdo-tw-p31"/>
+                                    <constraint firstItem="Spu-uz-lij" firstAttribute="top" secondItem="vWZ-ph-eUv" secondAttribute="bottom" constant="10" id="ldm-sF-s8a"/>
                                     <constraint firstItem="Spu-uz-lij" firstAttribute="trailing" secondItem="vWZ-ph-eUv" secondAttribute="trailing" id="rhQ-mB-MYq"/>
                                 </constraints>
                             </customView>
                             <button hidden="YES" verticalHuggingPriority="750" tag="1001" translatesAutoresizingMaskIntoConstraints="NO" id="k3t-RD-fqH">
-                                <rect key="frame" x="4" y="139" width="245" height="43"/>
+                                <rect key="frame" x="4" y="123" width="245" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="Lwg-sf-Ps7"/>
                                 </constraints>
@@ -414,7 +414,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" verticalHuggingPriority="750" tag="1002" translatesAutoresizingMaskIntoConstraints="NO" id="HDH-pK-Ef1">
-                                <rect key="frame" x="4" y="120" width="173" height="32"/>
+                                <rect key="frame" x="4" y="104" width="173" height="32"/>
                                 <buttonCell key="cell" type="push" title="Or pass custom views" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="k8N-sF-8J7">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -445,14 +445,14 @@
             <objects>
                 <viewController title="Setup Buttons " id="Z8p-Zw-PaC" sceneMemberID="viewController">
                     <view key="view" id="h7E-dc-pE0">
-                        <rect key="frame" x="0.0" y="0.0" width="554" height="498"/>
+                        <rect key="frame" x="0.0" y="0.0" width="554" height="482"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="eG7-Ya-o5T" userLabel="Container">
-                                <rect key="frame" x="0.0" y="0.0" width="554" height="498"/>
+                                <rect key="frame" x="0.0" y="0.0" width="554" height="482"/>
                                 <subviews>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="luI-oa-q6V" userLabel="Image Container" customClass="IBView">
-                                        <rect key="frame" x="26" y="186" width="502" height="302"/>
+                                        <rect key="frame" x="26" y="170" width="502" height="302"/>
                                         <subviews>
                                             <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2aW-HL-f0O">
                                                 <rect key="frame" x="1" y="1" width="500" height="300"/>
@@ -516,7 +516,7 @@
                                             <constraint firstItem="Y7t-dE-P6a" firstAttribute="leading" secondItem="iLN-kJ-qo9" secondAttribute="leading" constant="100" id="HFP-6T-9fm"/>
                                             <constraint firstAttribute="trailing" secondItem="Y7t-dE-P6a" secondAttribute="trailing" constant="100" id="I07-vm-wVj"/>
                                             <constraint firstItem="Y7t-dE-P6a" firstAttribute="top" secondItem="cXe-qT-FzK" secondAttribute="bottom" constant="5" id="vn9-eb-azi"/>
-                                            <constraint firstAttribute="height" constant="150" id="xPs-LJ-z30"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="xPs-LJ-z30"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColour">
@@ -538,14 +538,14 @@
                                     <constraint firstItem="iLN-kJ-qo9" firstAttribute="trailing" secondItem="luI-oa-q6V" secondAttribute="trailing" id="4ry-vz-NgX"/>
                                     <constraint firstItem="iLN-kJ-qo9" firstAttribute="leading" secondItem="luI-oa-q6V" secondAttribute="leading" id="9nz-86-ATH"/>
                                     <constraint firstItem="luI-oa-q6V" firstAttribute="top" secondItem="eG7-Ya-o5T" secondAttribute="top" constant="10" id="GHz-yq-avs"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="luI-oa-q6V" secondAttribute="trailing" id="PJM-Eu-2gV"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="luI-oa-q6V" secondAttribute="trailing" constant="10" id="PJM-Eu-2gV"/>
                                     <constraint firstItem="luI-oa-q6V" firstAttribute="centerX" secondItem="eG7-Ya-o5T" secondAttribute="centerX" id="c1s-k2-OR7"/>
-                                    <constraint firstItem="iLN-kJ-qo9" firstAttribute="top" relation="greaterThanOrEqual" secondItem="luI-oa-q6V" secondAttribute="bottom" constant="10" id="dG2-6t-60g"/>
+                                    <constraint firstItem="iLN-kJ-qo9" firstAttribute="top" secondItem="luI-oa-q6V" secondAttribute="bottom" constant="10" id="dG2-6t-60g"/>
                                     <constraint firstAttribute="bottom" secondItem="iLN-kJ-qo9" secondAttribute="bottom" constant="10" id="hCD-DU-fmN"/>
                                 </constraints>
                             </customView>
                             <button hidden="YES" verticalHuggingPriority="750" tag="1001" translatesAutoresizingMaskIntoConstraints="NO" id="TaC-qE-0Kz">
-                                <rect key="frame" x="4" y="139" width="118" height="43"/>
+                                <rect key="frame" x="4" y="123" width="118" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="HdS-Zm-Wg9"/>
                                 </constraints>
@@ -577,14 +577,14 @@
             <objects>
                 <viewController title="Custom Views" storyboardIdentifier="CustomViews" id="dfy-mW-sws" customClass="ViewController" customModule="SubclassSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="zVy-zr-td0">
-                        <rect key="frame" x="0.0" y="0.0" width="554" height="498"/>
+                        <rect key="frame" x="0.0" y="0.0" width="554" height="482"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="DId-oc-pab" userLabel="Container">
-                                <rect key="frame" x="0.0" y="0.0" width="554" height="498"/>
+                                <rect key="frame" x="0.0" y="0.0" width="554" height="482"/>
                                 <subviews>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="CuQ-uT-3Hi" userLabel="Image Container" customClass="IBView">
-                                        <rect key="frame" x="26" y="186" width="502" height="302"/>
+                                        <rect key="frame" x="26" y="170" width="502" height="302"/>
                                         <subviews>
                                             <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hkr-22-n8N">
                                                 <rect key="frame" x="1" y="1" width="500" height="300"/>
@@ -643,7 +643,7 @@
                                             </textField>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="5PA-Nm-pOh"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="5PA-Nm-pOh"/>
                                             <constraint firstItem="vQy-e3-lsE" firstAttribute="centerX" secondItem="kOu-8n-7Gv" secondAttribute="centerX" id="DFM-UY-mV8"/>
                                             <constraint firstItem="dmv-4j-FbK" firstAttribute="top" secondItem="vQy-e3-lsE" secondAttribute="bottom" constant="5" id="RE4-Yh-Qs7"/>
                                             <constraint firstAttribute="trailing" secondItem="dmv-4j-FbK" secondAttribute="trailing" constant="100" id="V1G-m6-LKq"/>
@@ -668,10 +668,10 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="CuQ-uT-3Hi" firstAttribute="top" secondItem="DId-oc-pab" secondAttribute="top" constant="10" id="5x3-rJ-9P3"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CuQ-uT-3Hi" secondAttribute="trailing" id="UNg-nw-Rrs"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CuQ-uT-3Hi" secondAttribute="trailing" constant="10" id="UNg-nw-Rrs"/>
                                     <constraint firstAttribute="bottom" secondItem="kOu-8n-7Gv" secondAttribute="bottom" constant="10" id="cG7-7t-7t9"/>
                                     <constraint firstItem="CuQ-uT-3Hi" firstAttribute="centerX" secondItem="DId-oc-pab" secondAttribute="centerX" id="fZ2-fF-4Xf"/>
-                                    <constraint firstItem="kOu-8n-7Gv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="CuQ-uT-3Hi" secondAttribute="bottom" constant="10" id="h9H-aM-0ed"/>
+                                    <constraint firstItem="kOu-8n-7Gv" firstAttribute="top" secondItem="CuQ-uT-3Hi" secondAttribute="bottom" constant="10" id="h9H-aM-0ed"/>
                                     <constraint firstItem="kOu-8n-7Gv" firstAttribute="trailing" secondItem="CuQ-uT-3Hi" secondAttribute="trailing" id="rIb-0N-mwE"/>
                                     <constraint firstItem="kOu-8n-7Gv" firstAttribute="leading" secondItem="CuQ-uT-3Hi" secondAttribute="leading" id="ydJ-LD-OBV"/>
                                 </constraints>
@@ -795,10 +795,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </customView>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="6mY-At-f80" userLabel="Detail Container" customClass="IBView">
-                                        <rect key="frame" x="26" y="10" width="502" height="150"/>
+                                        <rect key="frame" x="26" y="10" width="502" height="166"/>
                                         <subviews>
                                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="hey-g9-fOn">
-                                                <rect key="frame" x="98" y="51" width="306" height="57"/>
+                                                <rect key="frame" x="98" y="67" width="306" height="57"/>
                                                 <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" id="7co-Kg-UjE">
                                                     <font key="font" metaFont="system" size="15"/>
                                                     <string key="title">Make sure to set the segue ID to"1001" or "1002".
@@ -813,7 +813,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ahY-5H-0lr">
-                                                <rect key="frame" x="148" y="113" width="206" height="27"/>
+                                                <rect key="frame" x="148" y="129" width="206" height="27"/>
                                                 <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" title="Custom Push segue" id="GhR-x0-y6S">
                                                     <font key="font" metaFont="system" size="22"/>
                                                     <color key="textColor" white="0.2785429331" alpha="1" colorSpace="calibratedWhite"/>
@@ -830,7 +830,7 @@
                                             <constraint firstItem="ahY-5H-0lr" firstAttribute="top" secondItem="6mY-At-f80" secondAttribute="top" constant="10" id="8Om-uD-65u"/>
                                             <constraint firstItem="hey-g9-fOn" firstAttribute="top" secondItem="ahY-5H-0lr" secondAttribute="bottom" constant="5" id="Clt-ID-zH0"/>
                                             <constraint firstItem="hey-g9-fOn" firstAttribute="leading" secondItem="6mY-At-f80" secondAttribute="leading" constant="100" id="Wy3-4g-9CL"/>
-                                            <constraint firstAttribute="height" constant="150" id="aoc-UH-CT0"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="aoc-UH-CT0"/>
                                             <constraint firstAttribute="trailing" secondItem="hey-g9-fOn" secondAttribute="trailing" constant="100" id="e0J-vE-uef"/>
                                             <constraint firstItem="ahY-5H-0lr" firstAttribute="centerX" secondItem="6mY-At-f80" secondAttribute="centerX" id="eEq-7S-4xW"/>
                                         </constraints>
@@ -854,8 +854,8 @@
                                     <constraint firstItem="6mY-At-f80" firstAttribute="trailing" secondItem="CVF-xc-GbB" secondAttribute="trailing" id="3VW-tx-YEp"/>
                                     <constraint firstItem="CVF-xc-GbB" firstAttribute="top" secondItem="fXs-HJ-zrB" secondAttribute="top" constant="10" id="Cca-3O-hKk"/>
                                     <constraint firstItem="6mY-At-f80" firstAttribute="leading" secondItem="CVF-xc-GbB" secondAttribute="leading" id="MDb-hU-7Gs"/>
-                                    <constraint firstItem="6mY-At-f80" firstAttribute="top" relation="greaterThanOrEqual" secondItem="CVF-xc-GbB" secondAttribute="bottom" constant="10" id="eZt-Sz-XMK"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CVF-xc-GbB" secondAttribute="trailing" id="gRW-S4-DyS"/>
+                                    <constraint firstItem="6mY-At-f80" firstAttribute="top" secondItem="CVF-xc-GbB" secondAttribute="bottom" constant="10" id="eZt-Sz-XMK"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CVF-xc-GbB" secondAttribute="trailing" constant="10" id="gRW-S4-DyS"/>
                                     <constraint firstItem="CVF-xc-GbB" firstAttribute="centerX" secondItem="fXs-HJ-zrB" secondAttribute="centerX" id="tP6-lI-DvD"/>
                                     <constraint firstAttribute="bottom" secondItem="6mY-At-f80" secondAttribute="bottom" constant="10" id="vtD-EZ-L9A"/>
                                 </constraints>

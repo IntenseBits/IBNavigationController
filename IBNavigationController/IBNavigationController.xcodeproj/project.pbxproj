@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		830491E81D2D4F4B005830CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830491E71D2D4F4B005830CF /* Main.storyboard */; };
 		830491E91D2D7D8C005830CF /* MyCustomNavProxyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832412AC1D28079700551F81 /* MyCustomNavProxyViewController.xib */; };
+		830491EE1D2DB058005830CF /* IBNavigationProxyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830491EC1D2DB030005830CF /* IBNavigationProxyViewController.xib */; };
 		832412271D27F3AA00551F81 /* BFNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8324121D1D27F3AA00551F81 /* BFNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		832412281D27F3AA00551F81 /* BFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8324121E1D27F3AA00551F81 /* BFNavigationController.m */; };
 		832412291D27F3AA00551F81 /* BFViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8324121F1D27F3AA00551F81 /* BFViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -20,7 +21,6 @@
 		8324126F1D27F4B900551F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832412331D27F4AE00551F81 /* AppDelegate.swift */; };
 		832412701D27F4BE00551F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832412351D27F4AE00551F81 /* Assets.xcassets */; };
 		832412711D27F4C800551F81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832412361D27F4AE00551F81 /* Main.storyboard */; };
-		832412721D27F4CD00551F81 /* IBNavigationProxyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832412381D27F4AE00551F81 /* IBNavigationProxyViewController.xib */; };
 		832412771D27F50500551F81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 832412411D27F4AE00551F81 /* AppDelegate.m */; };
 		832412791D27F51800551F81 /* MyCustomNavProxyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832412441D27F4AE00551F81 /* MyCustomNavProxyViewController.xib */; };
 		8324127A1D27F51B00551F81 /* ObjCAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832412451D27F4AE00551F81 /* ObjCAssets.xcassets */; };
@@ -125,6 +125,7 @@
 
 /* Begin PBXFileReference section */
 		830491E71D2D4F4B005830CF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		830491EC1D2DB030005830CF /* IBNavigationProxyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IBNavigationProxyViewController.xib; sourceTree = "<group>"; };
 		832411911D27E9C900551F81 /* IBNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		832411E11D27F1B800551F81 /* SubclassSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubclassSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		832411F41D27F24F00551F81 /* SubclassObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubclassObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,7 +142,6 @@
 		832412331D27F4AE00551F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		832412351D27F4AE00551F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		832412371D27F4AE00551F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		832412381D27F4AE00551F81 /* IBNavigationProxyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IBNavigationProxyViewController.xib; sourceTree = "<group>"; };
 		8324123A1D27F4AE00551F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		832412401D27F4AE00551F81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		832412411D27F4AE00551F81 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -313,7 +313,7 @@
 			children = (
 				832412351D27F4AE00551F81 /* Assets.xcassets */,
 				832412361D27F4AE00551F81 /* Main.storyboard */,
-				832412381D27F4AE00551F81 /* IBNavigationProxyViewController.xib */,
+				830491EC1D2DB030005830CF /* IBNavigationProxyViewController.xib */,
 			);
 			path = "Assets + UI";
 			sourceTree = "<group>";
@@ -598,8 +598,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				832412721D27F4CD00551F81 /* IBNavigationProxyViewController.xib in Resources */,
 				832412701D27F4BE00551F81 /* Assets.xcassets in Resources */,
+				830491EE1D2DB058005830CF /* IBNavigationProxyViewController.xib in Resources */,
 				832412711D27F4C800551F81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

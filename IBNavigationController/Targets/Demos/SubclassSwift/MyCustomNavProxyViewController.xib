@@ -72,6 +72,9 @@
                                                 <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                     <real key="value" value="1"/>
                                                 </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="7"/>
+                                                </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                     </subviews>
@@ -138,7 +141,7 @@ View Controller Container</string>
                                         <stackView distribution="fillEqually" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" misplaced="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="raP-uw-im8">
                                             <rect key="frame" x="8" y="7" width="359" height="22"/>
                                             <subviews>
-                                                <button verticalHuggingPriority="750" misplaced="YES" tag="1" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UKH-PK-Bvp">
+                                                <button verticalHuggingPriority="750" tag="1" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UKH-PK-Bvp">
                                                     <rect key="frame" x="0.0" y="-2" width="176" height="25"/>
                                                     <buttonCell key="cell" type="roundTextured" title="Button 1" bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xlC-uR-lAX">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -148,7 +151,7 @@ View Controller Container</string>
                                                         <action selector="buttonPressed:" target="-2" id="HiR-VN-Yex"/>
                                                     </connections>
                                                 </button>
-                                                <button verticalHuggingPriority="750" misplaced="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="14a-S5-eFu">
+                                                <button verticalHuggingPriority="750" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="14a-S5-eFu">
                                                     <rect key="frame" x="184" y="-2" width="176" height="25"/>
                                                     <buttonCell key="cell" type="roundTextured" title="Button 2" bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Atj-JE-Qv9">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
