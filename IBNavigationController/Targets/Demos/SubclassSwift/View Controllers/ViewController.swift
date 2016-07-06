@@ -10,7 +10,18 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+	@IBOutlet weak var txtName: NSTextField!
 	
+	@IBAction func sayHello(sender: NSButton)
+	{
+		let alert = NSAlert()
+		alert.addButtonWithTitle("OK")
+		let msg = "Hello \(txtName.stringValue)"
+		alert.informativeText = msg
+		alert.messageText = "Nice to meet you"
+		alert.alertStyle = .InformationalAlertStyle
+		alert.runModal()
+	}
 	
 	override func viewDidLoad()
 	{

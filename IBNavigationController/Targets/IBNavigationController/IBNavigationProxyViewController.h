@@ -29,10 +29,10 @@ typedef void(^IBButtonPressed)(NSInteger tag);
 @interface IBNavigationProxyViewController : X_VIEWCONTROLLER
 
 
-@property (weak) IBOutlet X_VIEW *containerView;
-@property (weak) IBOutlet X_BUTTON *backButton;
-@property (weak) IBOutlet X_BUTTON *button1;
-@property (weak) IBOutlet X_BUTTON *button2;
+@property (weak) IBOutlet NSView *containerView;
+@property (weak) IBOutlet NSButton *backButton;
+@property (weak) IBOutlet NSButton *button1;
+@property (weak) IBOutlet NSButton *button2;
 
 @property (weak,nonatomic) IBNavigationItem* navigationItem;
 @property (copy,nonatomic) IBButtonPressed buttonPressed;

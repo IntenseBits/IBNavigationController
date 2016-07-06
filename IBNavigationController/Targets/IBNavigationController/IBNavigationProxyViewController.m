@@ -10,8 +10,8 @@
 #import "IBNavigationItem.h"
 
 @interface IBNavigationProxyViewController ()
-@property (weak) IBOutlet X_STACKVIEW *stackViewRightButtons;
-@property (weak) IBOutlet X_LABEL *lbTitle;
+@property (weak) IBOutlet NSStackView *stackViewRightButtons;
+@property (weak) IBOutlet NSTextField *lbTitle;
 
 
 
