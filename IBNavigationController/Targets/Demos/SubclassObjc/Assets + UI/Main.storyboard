@@ -288,13 +288,13 @@
                                 </connections>
                             </button>
                             <button hidden="YES" verticalHuggingPriority="750" tag="1002" translatesAutoresizingMaskIntoConstraints="NO" id="0OZ-Oc-8oh">
-                                <rect key="frame" x="4" y="270" width="117" height="32"/>
-                                <buttonCell key="cell" type="push" title="More Details" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oQM-Ak-aXL">
+                                <rect key="frame" x="4" y="270" width="173" height="32"/>
+                                <buttonCell key="cell" type="push" title="Or pass custom views" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oQM-Ak-aXL">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <segue destination="t5E-Vs-pjk" kind="custom" identifier="toolbar2" customClass="IBNavigationPushSegue" id="95h-HG-wS2"/>
+                                    <segue destination="L7d-Fm-ZXl" kind="custom" identifier="1002" customClass="IBNavigationPushSegue" id="l3q-ct-d2k"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -382,13 +382,25 @@
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
                             </stackView>
+                            <button hidden="YES" verticalHuggingPriority="750" tag="1001" translatesAutoresizingMaskIntoConstraints="NO" id="d8h-KC-bN5">
+                                <rect key="frame" x="4" y="312" width="117" height="32"/>
+                                <buttonCell key="cell" type="push" title="More Details" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZQH-Tk-3Cr">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="t5E-Vs-pjk" kind="custom" customClass="IBNavigationPushSegue" id="Vek-z7-M3c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Y82-zc-3Dr" secondAttribute="bottom" id="458-HA-B1k"/>
                             <constraint firstAttribute="trailing" secondItem="Y82-zc-3Dr" secondAttribute="trailing" id="BqJ-Nf-fJe"/>
                             <constraint firstItem="Y82-zc-3Dr" firstAttribute="leading" secondItem="20b-7H-UXb" secondAttribute="leading" id="FAM-hT-RlO"/>
+                            <constraint firstItem="d8h-KC-bN5" firstAttribute="leading" secondItem="20b-7H-UXb" secondAttribute="leading" constant="10" id="a9Q-mB-Zhg"/>
                             <constraint firstItem="dUj-XB-cuO" firstAttribute="centerY" secondItem="20b-7H-UXb" secondAttribute="centerY" id="c7q-Rd-sGV"/>
                             <constraint firstItem="Y82-zc-3Dr" firstAttribute="top" secondItem="20b-7H-UXb" secondAttribute="top" id="ng1-C9-Mrr"/>
+                            <constraint firstItem="d8h-KC-bN5" firstAttribute="top" secondItem="20b-7H-UXb" secondAttribute="top" constant="10" id="tMK-ue-sbB"/>
                             <constraint firstItem="dUj-XB-cuO" firstAttribute="centerX" secondItem="20b-7H-UXb" secondAttribute="centerX" id="wSD-d9-hHS"/>
                         </constraints>
                     </view>
@@ -412,11 +424,11 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="pBz-FU-IHj"/>
                                 </constraints>
                             </customView>
-                            <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h4J-fZ-V61">
-                                <rect key="frame" x="100" y="14" width="300" height="321"/>
+                            <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" misplaced="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h4J-fZ-V61">
+                                <rect key="frame" x="100" y="90" width="300" height="245"/>
                                 <subviews>
                                     <imageView translatesAutoresizingMaskIntoConstraints="NO" id="ckz-Xr-mwp">
-                                        <rect key="frame" x="0.0" y="176" width="345" height="145"/>
+                                        <rect key="frame" x="0.0" y="100" width="345" height="145"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="345" id="PIS-Pr-872"/>
                                             <constraint firstAttribute="height" constant="145" id="kfp-rw-igH"/>
@@ -424,7 +436,7 @@
                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="toolbarbuttonsegue" id="fEc-lF-DmN"/>
                                     </imageView>
                                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="uu4-GH-ttv">
-                                        <rect key="frame" x="-2" y="141" width="304" height="27"/>
+                                        <rect key="frame" x="-2" y="65" width="304" height="27"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="pVI-gV-4md"/>
                                         </constraints>
@@ -435,16 +447,14 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="KWv-be-DXV">
-                                        <rect key="frame" x="33" y="0.0" width="234" height="133"/>
+                                        <rect key="frame" x="33" y="0.0" width="234" height="57"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="230" id="K9m-ao-uj1"/>
                                         </constraints>
                                         <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" id="xMc-t4-SAZ">
                                             <font key="font" metaFont="system" size="15"/>
-                                            <string key="title">Make sure to set the segue ID to"toolbar1" or "toolbar2".
-
-
-You must ensure that you are not subscribing to the buttonPressed block!!!!</string>
+                                            <string key="title">Make sure to set the segue ID to"1001" or "1002".
+</string>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -478,7 +488,115 @@ You must ensure that you are not subscribing to the buttonPressed block!!!!</str
                 </viewController>
                 <customObject id="ZtM-SM-JP8" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1683" y="1456"/>
+            <point key="canvasLocation" x="1070" y="2020"/>
+        </scene>
+        <!--Setup Segue-->
+        <scene sceneID="bXQ-Zn-j1m">
+            <objects>
+                <viewController title="Setup Segue" id="L7d-Fm-ZXl" sceneMemberID="viewController">
+                    <view key="view" id="B12-fp-cz5">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="350"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="9i4-sJ-fmo">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="GAn-P4-dmc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="Knt-e6-OIN"/>
+                                </constraints>
+                            </customView>
+                            <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" misplaced="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r0D-QQ-90x">
+                                <rect key="frame" x="100" y="90" width="300" height="245"/>
+                                <subviews>
+                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" id="sF1-qw-P90">
+                                        <rect key="frame" x="0.0" y="100" width="345" height="145"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="145" id="m19-Wo-yUR"/>
+                                            <constraint firstAttribute="width" constant="345" id="ubg-gj-Z7P"/>
+                                        </constraints>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="toolbarbuttonsegue" id="q3C-Ng-AdK"/>
+                                    </imageView>
+                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Ieu-ku-enu">
+                                        <rect key="frame" x="-2" y="65" width="304" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="34H-eY-hgN"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" title="Setup NSView" id="Lny-vc-RV1">
+                                            <font key="font" metaFont="system" size="22"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="AGX-SU-3bx">
+                                        <rect key="frame" x="33" y="0.0" width="234" height="57"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="230" id="TyD-vz-dcY"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" id="4ft-gF-w29">
+                                            <font key="font" metaFont="system" size="15"/>
+                                            <string key="title">Make sure to set the views identifier to "1001" or "1002"
+</string>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ieu-ku-enu" secondAttribute="trailing" id="Adu-bD-9cO"/>
+                                    <constraint firstItem="Ieu-ku-enu" firstAttribute="leading" secondItem="r0D-QQ-90x" secondAttribute="leading" id="WIR-lI-QtJ"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                            <customView identifier="1001" translatesAutoresizingMaskIntoConstraints="NO" id="AuK-rW-XQ2">
+                                <rect key="frame" x="10" y="271" width="100" height="69"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jbq-Go-Pta">
+                                        <rect key="frame" x="6" y="43" width="84" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Custom View" id="uoi-oI-euf">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NyK-rG-Ucz">
+                                        <rect key="frame" x="2" y="13" width="78" height="22"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="QcH-ci-aaU">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0nx-Bo-dXv"/>
+                                    <constraint firstAttribute="height" constant="69" id="ZO2-1K-fch"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="r0D-QQ-90x" firstAttribute="centerX" secondItem="B12-fp-cz5" secondAttribute="centerX" id="EI2-Aq-8SL"/>
+                            <constraint firstItem="AuK-rW-XQ2" firstAttribute="leading" secondItem="B12-fp-cz5" secondAttribute="leading" constant="10" id="IJu-lz-S4h"/>
+                            <constraint firstItem="9i4-sJ-fmo" firstAttribute="top" secondItem="B12-fp-cz5" secondAttribute="top" id="XsS-wN-MjY"/>
+                            <constraint firstAttribute="bottom" secondItem="9i4-sJ-fmo" secondAttribute="bottom" id="f71-yA-0lO"/>
+                            <constraint firstItem="9i4-sJ-fmo" firstAttribute="leading" secondItem="B12-fp-cz5" secondAttribute="leading" id="hjm-nX-Thf"/>
+                            <constraint firstAttribute="trailing" secondItem="9i4-sJ-fmo" secondAttribute="trailing" id="nQy-ai-DJe"/>
+                            <constraint firstItem="AuK-rW-XQ2" firstAttribute="top" secondItem="B12-fp-cz5" secondAttribute="top" constant="10" id="tZK-tw-qNs"/>
+                            <constraint firstItem="r0D-QQ-90x" firstAttribute="centerY" secondItem="B12-fp-cz5" secondAttribute="centerY" id="xkg-aP-h06"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="xlT-lJ-3Ji" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1655" y="1456"/>
         </scene>
     </scenes>
     <resources>

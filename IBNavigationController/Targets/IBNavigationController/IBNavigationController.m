@@ -226,21 +226,44 @@ static const CGFloat kPushPopAnimationDuration = 0.2;
 	[potentialButton removeFromSuperview];
 	
 }
+
+-(NSView*)extractUserDefinedViewWithID:(NSInteger)tag fromViewController:(X_VIEWCONTROLLER*)viewController
+{
+	X_VIEW* view = viewController.view;
+	X_VIEW* userSuppliedView1 = [view viewWithTag:tag];
+	
+	if (!userSuppliedView1)
+	{
+		//We didnt find a view matching that tag so try and find a view with a matching identifier
+		NSString* identifier = [[NSString alloc] initWithFormat:@"%lu",tag];
+		
+		for (NSView* subview in view.subviews)
+		{
+			NSString* thisID = subview.identifier;
+			
+			if ([thisID isEqualToString:identifier])
+			{
+				return subview;
+			}
+		}
+	}
+	
+	return userSuppliedView1;
+}
 /**
  * Attempts to create NavigationItem toolbar buttons from NSButton OR NSView instances defined in the storyboard
  * that are tagged with unique values.
  */
 -(void)extractToolbarButtonsFromViewController:(X_VIEWCONTROLLER*)viewController
 {
-	X_VIEW* view = viewController.view;
 	IBNavigationItem* item = viewController.navItem;
 	
 	if (viewController.title)
 	{
 		item.title = viewController.title;
 	}
-	X_VIEW* userSuppliedView1 = [view viewWithTag:TAG_TOOLBAR_BUTTON_1];
-	X_VIEW* userSuppliedView2 = [view viewWithTag:TAG_TOOLBAR_BUTTON_2];
+	X_VIEW* userSuppliedView1 = [self extractUserDefinedViewWithID:TAG_TOOLBAR_BUTTON_1 fromViewController:viewController];
+	X_VIEW* userSuppliedView2 = [self extractUserDefinedViewWithID:TAG_TOOLBAR_BUTTON_2 fromViewController:viewController];
 	
 	//for when we are popping back, we have already extracted the view from the view controller
 	userSuppliedView1 = userSuppliedView1 ? userSuppliedView1 : item.userSuppliedToolBarView1;
@@ -250,29 +273,29 @@ static const CGFloat kPushPopAnimationDuration = 0.2;
 	item.userSuppliedToolBarView1 = userSuppliedView1;
 	item.userSuppliedToolBarView2 = userSuppliedView2;
 	
-		//We need to decide whether we treat the view as a content source for our
-		//buttons in the proxy nib OR if the view should replace the button in our proxy nib.
-		//We decide by testing the hidden property of the view and testing whether its a button or not.
-		//We use it as a content source if ITS A BUTTON + ITS HIDDEN
-		//If its NOT HIDDEN (+ it CAN BE A BUTTON, but doesnt have to be) then it replaces the button in our proxy nib
-		[self dealWithButton:userSuppliedView1 forNavigationItem:item forKeyPath:@"button1Title"];
-		[self dealWithButton:userSuppliedView2 forNavigationItem:item forKeyPath:@"button2Title"];
+	//We need to decide whether we treat the view as a content source for our
+	//buttons in the proxy nib OR if the view should replace the button in our proxy nib.
+	//We decide by testing the hidden property of the view and testing whether its a button or not.
+	//We use it as a content source if ITS A BUTTON + ITS HIDDEN
+	//If its NOT HIDDEN (+ it CAN BE A BUTTON, but doesnt have to be) then it replaces the button in our proxy nib
+	[self dealWithButton:userSuppliedView1 forNavigationItem:item forKeyPath:@"button1Title"];
+	[self dealWithButton:userSuppliedView2 forNavigationItem:item forKeyPath:@"button2Title"];
+	
+	item.buttonPressed_INTERNAL = ^(X_BUTTON* button)
+	{
+		NSInteger tag = button.tag;
 		
-		item.buttonPressed_INTERNAL = ^(X_BUTTON* button)
+		if (tag == 1)
 		{
-			NSInteger tag = button.tag;
-			
-			if (tag == 1)
-			{
-				NSLog(@"Firing segue: '%@'",SEGUE_ID_TOOLBAR_BUTTON_1);
-				[viewController performSegueWithIdentifier:SEGUE_ID_TOOLBAR_BUTTON_1 sender:self];
-			}
-			else if (tag == 2)
-			{
-				NSLog(@"Firing segue: '%@'",SEGUE_ID_TOOLBAR_BUTTON_2);
-				[viewController performSegueWithIdentifier:SEGUE_ID_TOOLBAR_BUTTON_2 sender:self];
-			}
-		};
+			NSLog(@"Firing segue: '%@'",SEGUE_ID_TOOLBAR_BUTTON_1);
+			[viewController performSegueWithIdentifier:SEGUE_ID_TOOLBAR_BUTTON_1 sender:self];
+		}
+		else if (tag == 2)
+		{
+			NSLog(@"Firing segue: '%@'",SEGUE_ID_TOOLBAR_BUTTON_2);
+			[viewController performSegueWithIdentifier:SEGUE_ID_TOOLBAR_BUTTON_2 sender:self];
+		}
+	};
 }
 
 
