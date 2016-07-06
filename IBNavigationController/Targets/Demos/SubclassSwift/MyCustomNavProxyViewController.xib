@@ -93,13 +93,17 @@
                                     </userDefinedRuntimeAttributes>
                                 </customView>
                                 <customView horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jQf-HT-uEf" userLabel="LeftButtons" customClass="IBView">
-                                    <rect key="frame" x="0.0" y="0.0" width="60" height="34"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="25" height="34"/>
                                     <subviews>
                                         <button horizontalHuggingPriority="750" verticalHuggingPriority="750" tag="99999" translatesAutoresizingMaskIntoConstraints="NO" id="5fT-KS-qyR">
-                                            <rect key="frame" x="-6" y="-1" width="72" height="32"/>
-                                            <buttonCell key="cell" type="push" title="Back" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fWl-v9-pte">
+                                            <rect key="frame" x="0.0" y="4.5" width="25" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="YEu-iC-VTA"/>
+                                                <constraint firstAttribute="width" constant="25" id="wJP-Eo-oTU"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="back" imagePosition="only" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="fWl-v9-pte">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" size="13" name="Arial-BoldMT"/>
+                                                <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
                                                 <action selector="buttonPressed:" target="-2" id="gB7-bE-xF5"/>
@@ -121,7 +125,7 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </customView>
-                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jKB-Ss-l6P">
+                                <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jKB-Ss-l6P">
                                     <rect key="frame" x="68" y="7" width="248" height="21"/>
                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="Title" usesSingleLineMode="YES" id="VJO-Pz-Lxj">
                                         <font key="font" metaFont="system" size="17"/>
@@ -211,4 +215,7 @@ View Controller Container</string>
             <point key="canvasLocation" x="191.5" y="332"/>
         </customView>
     </objects>
+    <resources>
+        <image name="back" width="128" height="128"/>
+    </resources>
 </document>

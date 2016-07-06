@@ -157,7 +157,6 @@
 		832412501D27F4AE00551F81 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		832412521D27F4AE00551F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		832412541D27F4AE00551F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		832412551D27F4AE00551F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		832412581D27F4AE00551F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		832412591D27F4AE00551F81 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8324125A1D27F4AE00551F81 /* SwiftAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SwiftAssets.xcassets; sourceTree = "<group>"; };
@@ -368,7 +367,6 @@
 			isa = PBXGroup;
 			children = (
 				832412541D27F4AE00551F81 /* AppDelegate.swift */,
-				832412551D27F4AE00551F81 /* Assets.xcassets */,
 				832412581D27F4AE00551F81 /* Info.plist */,
 				832412AC1D28079700551F81 /* MyCustomNavProxyViewController.xib */,
 				832412591D27F4AE00551F81 /* Main.storyboard */,

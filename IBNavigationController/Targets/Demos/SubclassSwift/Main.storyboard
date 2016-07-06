@@ -270,7 +270,7 @@
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
                                         <connections>
-                                            <segue destination="HH5-EA-PRU" kind="custom" identifier="toolbar1" customClass="IBNavigationPushSegue" id="pNi-D7-3bY"/>
+                                            <segue destination="HH5-EA-PRU" kind="custom" identifier="1001" customClass="IBNavigationPushSegue" id="pNi-D7-3bY"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -336,7 +336,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <segue destination="t5E-Vs-pjk" kind="custom" identifier="toolbar2" customClass="IBNavigationPushSegue" id="95h-HG-wS2"/>
+                                    <segue destination="t5E-Vs-pjk" kind="custom" identifier="1002" customClass="IBNavigationPushSegue" id="95h-HG-wS2"/>
                                 </connections>
                             </button>
                         </subviews>

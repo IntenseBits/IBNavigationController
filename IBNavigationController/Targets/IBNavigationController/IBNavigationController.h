@@ -25,11 +25,11 @@
 /**
  * If using toolbar buttons defined in the storyboard, you must set the segue ID to this
  */
-#define SEGUE_ID_TOOLBAR_BUTTON_1 @"toolbar1"
+#define SEGUE_ID_TOOLBAR_BUTTON_1 @"1001"
 /**
  * If using toolbar buttons defined in the storyboard, you must set the segue ID to this
  */
-#define SEGUE_ID_TOOLBAR_BUTTON_2 @"toolbar2"
+#define SEGUE_ID_TOOLBAR_BUTTON_2 @"1002"
 
 /**
  * If using toolbar buttons defined in the storyboard, you must set the tag to this
