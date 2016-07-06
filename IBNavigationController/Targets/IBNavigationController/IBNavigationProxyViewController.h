@@ -28,6 +28,8 @@ typedef void(^IBButtonPressed)(NSInteger tag);
  */
 @interface IBNavigationProxyViewController : X_VIEWCONTROLLER
 
+@property (weak) IBOutlet NSStackView *stackViewRightButtons;
+@property (weak) IBOutlet NSTextField *lbTitle;
 
 @property (weak) IBOutlet NSView *containerView;
 @property (weak) IBOutlet NSButton *backButton;
