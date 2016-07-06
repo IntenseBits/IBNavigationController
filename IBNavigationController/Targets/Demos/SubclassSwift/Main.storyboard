@@ -385,7 +385,7 @@
                                 </userDefinedRuntimeAttributes>
                             </customView>
                             <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" misplaced="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dUj-XB-cuO">
-                                <rect key="frame" x="50" y="41" width="400" height="318"/>
+                                <rect key="frame" x="50" y="41" width="300" height="318"/>
                                 <subviews>
                                     <imageView translatesAutoresizingMaskIntoConstraints="NO" id="Mnu-Qt-E00">
                                         <rect key="frame" x="0.0" y="108" width="400" height="210"/>
@@ -407,7 +407,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BXa-hr-Zck">
-                                        <rect key="frame" x="137" y="0.0" width="127" height="38"/>
+                                        <rect key="frame" x="87" y="0.0" width="127" height="38"/>
                                         <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" id="qja-Np-vjK">
                                             <font key="font" metaFont="system" size="15"/>
                                             <string key="title"> 1001 for button 1
@@ -551,7 +551,7 @@ You must ensure that you are not subscribing to the buttonPressed block!!!!</str
     </scenes>
     <resources>
         <image name="Code" width="753" height="251"/>
-        <image name="Push Segue" width="474" height="197"/>
+        <image name="Push Segue" width="500" height="300"/>
         <image name="User Defined Values" width="356" height="286"/>
         <image name="toolbarbuttonsegue" width="583" height="299"/>
         <image name="toolbarbuttontag" width="577" height="315"/>
