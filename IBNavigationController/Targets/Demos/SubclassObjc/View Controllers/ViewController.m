@@ -7,9 +7,31 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 @import IBNavigationController;
 
+@interface ViewController ()
+{
+	
+}
+
+@property (weak) IBOutlet NSTextField *txtName;
+
+@end
 @implementation ViewController
+
+- (IBAction)SayHello:(NSButton *)sender
+{
+	NSAlert *alert = [[NSAlert alloc] init];
+	[alert addButtonWithTitle:@"OK"];
+	NSString* msg = [[NSString alloc] initWithFormat:@"Hello %@",_txtName.stringValue];
+	[alert setMessageText:@"Nice to meet you"];
+	[alert setInformativeText:msg];
+	[alert setAlertStyle:NSInformationalAlertStyle];
+	//[alert beginSheetModalForWindow:[self window] modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:nil];
+	
+	[alert runModal];
+}
 
 - (void)viewDidLoad {
 	[super viewDidLoad];

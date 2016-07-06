@@ -128,11 +128,11 @@ static const CGFloat kPushPopAnimationDuration = 0.2;
 		{
 			if (buttonTag == BF_BUTTON_TAG_BUTTON_1)
 			{
-				NSLog(@"Button 1 clicked - If you were expecting a segue to fire, please ensure its id is set to '%@'",SEGUE_ID_TOOLBAR_BUTTON_1);
+				NSLog(@"Button 1 clicked");
 			}
 			else if (buttonTag == BF_BUTTON_TAG_BUTTON_2)
 			{
-				NSLog(@"Button 2 clicked - If you were expecting a segue to fire, please ensure its id is set to '%@'",SEGUE_ID_TOOLBAR_BUTTON_2);
+				NSLog(@"Button 2 clicked");
 			}
 			
 			//pass through to user code

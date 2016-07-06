@@ -11,8 +11,8 @@
 IB_DESIGNABLE
 @interface IBView : X_VIEW
 
-@property(nonatomic,assign) IBInspectable X_COLOUR* borderColour;
+@property(nonatomic,assign) IBInspectable NSColor* borderColour;
 @property(nonatomic,assign) IBInspectable CGFloat borderWidth;
 @property (nonatomic,assign) IBInspectable CGFloat cornerRadius;
-@property (weak,nonatomic) IBInspectable X_COLOUR* backgroundColour;
+@property (weak,nonatomic) IBInspectable NSColor* backgroundColour;
 @end
