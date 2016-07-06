@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830491E81D2D4F4B005830CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830491E71D2D4F4B005830CF /* Main.storyboard */; };
 		832412271D27F3AA00551F81 /* BFNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8324121D1D27F3AA00551F81 /* BFNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		832412281D27F3AA00551F81 /* BFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8324121E1D27F3AA00551F81 /* BFNavigationController.m */; };
 		832412291D27F3AA00551F81 /* BFViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8324121F1D27F3AA00551F81 /* BFViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,7 +31,6 @@
 		832412811D27F55400551F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832412521D27F4AE00551F81 /* Assets.xcassets */; };
 		832412821D27F55A00551F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832412541D27F4AE00551F81 /* AppDelegate.swift */; };
 		832412841D27F55F00551F81 /* SwiftAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8324125A1D27F4AE00551F81 /* SwiftAssets.xcassets */; };
-		832412851D27F57700551F81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832412591D27F4AE00551F81 /* Main.storyboard */; };
 		832412861D27F58600551F81 /* MyCustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8324125C1D27F4AE00551F81 /* MyCustomNavigationController.swift */; };
 		832412871D27F58600551F81 /* MyCustomNavProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8324125D1D27F4AE00551F81 /* MyCustomNavProxyViewController.swift */; };
 		832412881D27F58600551F81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8324125E1D27F4AE00551F81 /* ViewController.swift */; };
@@ -124,6 +124,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		830491E71D2D4F4B005830CF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		832411911D27E9C900551F81 /* IBNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		832411E11D27F1B800551F81 /* SubclassSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubclassSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		832411F41D27F24F00551F81 /* SubclassObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubclassObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,7 +159,6 @@
 		832412521D27F4AE00551F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		832412541D27F4AE00551F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		832412581D27F4AE00551F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		832412591D27F4AE00551F81 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8324125A1D27F4AE00551F81 /* SwiftAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SwiftAssets.xcassets; sourceTree = "<group>"; };
 		8324125C1D27F4AE00551F81 /* MyCustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomNavigationController.swift; sourceTree = "<group>"; };
 		8324125D1D27F4AE00551F81 /* MyCustomNavProxyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomNavProxyViewController.swift; sourceTree = "<group>"; };
@@ -368,8 +368,8 @@
 			children = (
 				832412541D27F4AE00551F81 /* AppDelegate.swift */,
 				832412581D27F4AE00551F81 /* Info.plist */,
+				830491E71D2D4F4B005830CF /* Main.storyboard */,
 				832412AC1D28079700551F81 /* MyCustomNavProxyViewController.xib */,
-				832412591D27F4AE00551F81 /* Main.storyboard */,
 				8324125A1D27F4AE00551F81 /* SwiftAssets.xcassets */,
 				8324125B1D27F4AE00551F81 /* View Controllers */,
 			);
@@ -579,7 +579,7 @@
 				832412841D27F55F00551F81 /* SwiftAssets.xcassets in Resources */,
 				832412811D27F55400551F81 /* Assets.xcassets in Resources */,
 				832412AD1D28079700551F81 /* MyCustomNavProxyViewController.xib in Resources */,
-				832412851D27F57700551F81 /* Main.storyboard in Resources */,
+				830491E81D2D4F4B005830CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
