@@ -13,9 +13,12 @@
 #import "BFViewController.h"
 #import "IBNavigationItem.h"
 
+//We didnt find a view matching that tag so try and find a view with a matching identifier
+
+#define TAG_TO_ID(TAG) [[NSString alloc] initWithFormat:@"%d",TAG]
 #ifdef IB_TARGET_PLATFORM_MAC
 #import "NSView+BFUtilities.h"
-static const CGFloat kPushPopAnimationDuration = 0.2;
+
 #endif
 
 
@@ -70,6 +73,9 @@ static const CGFloat kPushPopAnimationDuration = 0.2;
 -(void)awakeFromNib
 {
 	[super awakeFromNib];
+	
+	//set default if needed
+	self.pushPopAnimationDuration = _pushPopAnimationDuration > 0 ? _pushPopAnimationDuration : kPushPopAnimationDuration;
 	
 #ifdef IB_TARGET_PLATFORM_MAC
 	
@@ -176,79 +182,24 @@ static const CGFloat kPushPopAnimationDuration = 0.2;
 	
 }
 
-/**
- * We need to decide whether we treat the view as a content source for our buttons in the proxy nib OR 
- * if the view should replace the button in our proxy nib.
- * We decide by testing the hidden property of the view and testing whether its a button or not.
- * We use it as a content source if ITS A BUTTON + ITS HIDDEN
- * If its NOT A BUTTON then it replaces the button in our proxy nib
- */
--(void)dealWithButton:(X_VIEW*)potentialButton forNavigationItem:(IBNavigationItem*)item forKeyPath:(NSString*)path
-{
-	if ([potentialButton isKindOfClass:[X_BUTTON class]])
-	{
-		X_BUTTON* button = (X_BUTTON*)potentialButton;
-		
-		if (button.hidden)
-		{
-			//We have been given a toolbar button in Interface builder
-			//we mine it for its title
-#ifdef IB_TARGET_PLATFORM_MAC
-						[item setValue:button.title forKey:path];
-#else
-						[item setValue:button.titleLabel.text forKey:path];
-#endif
 
 
-		}
-		else
-		{
-			//We've added the item to the NavigationItem elsewhere
-			//This will be used to replace the button in the proxy nib, elsewhere
-			//We reset the title of the button to cause it to be hidden
-			[item setValue:nil forKey:path];
-		}
-	}
-	else if (potentialButton!=nil)
-	{
-		//We've added the item to the NavigationItem elsewhere
-		//This will be used to replace the button in the proxy nib, elsewhere
-		//We reset the title of the button to cause it to be hidden
-		[item setValue:nil forKey:path];
-	}
-	else
-	{
-		//Perhaps we have been supplied with a string in the nav item?
-		
-	}
-	
-	//we have extracted them from the storyboard and stored a ref
-	[potentialButton removeFromSuperview];
-	
-}
-
--(NSView*)extractUserDefinedViewWithID:(NSInteger)tag fromViewController:(X_VIEWCONTROLLER*)viewController
+-(NSView*)extractUserDefinedViewWithIdentifier:(NSString*)identifier fromViewController:(X_VIEWCONTROLLER*)viewController
 {
 	X_VIEW* view = viewController.view;
-	X_VIEW* userSuppliedView1 = [view viewWithTag:tag];
-	
-	if (!userSuppliedView1)
+
+	for (NSView* subview in view.subviews)
 	{
-		//We didnt find a view matching that tag so try and find a view with a matching identifier
-		NSString* identifier = [[NSString alloc] initWithFormat:@"%lu",tag];
+		NSString* thisID = subview.identifier;
 		
-		for (NSView* subview in view.subviews)
+		if ([thisID isEqualToString:identifier])
 		{
-			NSString* thisID = subview.identifier;
-			
-			if ([thisID isEqualToString:identifier])
-			{
-				return subview;
-			}
+			return subview;
 		}
 	}
 	
-	return userSuppliedView1;
+	
+	return nil;
 }
 /**
  * Attempts to create NavigationItem toolbar buttons from NSButton OR NSView instances defined in the storyboard
@@ -262,39 +213,39 @@ static const CGFloat kPushPopAnimationDuration = 0.2;
 	{
 		item.title = viewController.title;
 	}
-	X_VIEW* userSuppliedView1 = [self extractUserDefinedViewWithID:TAG_TOOLBAR_BUTTON_1 fromViewController:viewController];
-	X_VIEW* userSuppliedView2 = [self extractUserDefinedViewWithID:TAG_TOOLBAR_BUTTON_2 fromViewController:viewController];
+	
+	NSButton* userButton1 = (NSButton*)[viewController.view viewWithTag:TAG_TOOLBAR_BUTTON_1];
+	NSButton* userButton2 = (NSButton*)[viewController.view viewWithTag:TAG_TOOLBAR_BUTTON_2];
+	
+	X_VIEW* userSuppliedView1 = [self extractUserDefinedViewWithIdentifier:TAG_TO_ID(TAG_TOOLBAR_BUTTON_1) fromViewController:viewController];
+	X_VIEW* userSuppliedView2 = [self extractUserDefinedViewWithIdentifier:TAG_TO_ID(TAG_TOOLBAR_BUTTON_2) fromViewController:viewController];
 	
 	//for when we are popping back, we have already extracted the view from the view controller
-	userSuppliedView1 = userSuppliedView1 ? userSuppliedView1 : item.userSuppliedToolBarView1;
-	userSuppliedView2 = userSuppliedView2 ? userSuppliedView2 : item.userSuppliedToolBarView2;
-	
+	//CB: Dont think we need this anymore as we just are extracting stuff here, not actually using it
+//	userSuppliedView1 = userSuppliedView1 ? userSuppliedView1 : item.userSuppliedToolBarView1;
+//	userSuppliedView2 = userSuppliedView2 ? userSuppliedView2 : item.userSuppliedToolBarView2;
+//	
 	//store these for adding to the toolbar
-	item.userSuppliedToolBarView1 = userSuppliedView1;
-	item.userSuppliedToolBarView2 = userSuppliedView2;
+	item.userSuppliedToolBarView1 = userSuppliedView1 ? userSuppliedView1 : item.userSuppliedToolBarView1;
+	item.userSuppliedToolBarView2 = userSuppliedView2 ? userSuppliedView2 : item.userSuppliedToolBarView2;
 	
-	//We need to decide whether we treat the view as a content source for our
-	//buttons in the proxy nib OR if the view should replace the button in our proxy nib.
-	//We decide by testing the hidden property of the view and testing whether its a button or not.
-	//We use it as a content source if ITS A BUTTON + ITS HIDDEN
-	//If its NOT HIDDEN (+ it CAN BE A BUTTON, but doesnt have to be) then it replaces the button in our proxy nib
-	[self dealWithButton:userSuppliedView1 forNavigationItem:item forKeyPath:@"button1Title"];
-	[self dealWithButton:userSuppliedView2 forNavigationItem:item forKeyPath:@"button2Title"];
+	//handle backward journey, because we have removed the views from their original homes
+	item.userSuppliedButton1 = userButton1 ? userButton1 : item.userSuppliedButton1;
+	item.userSuppliedButton2 = userButton2 ? userButton2 : item.userSuppliedButton2;
+	
+	//we can now safely remove it from its original storyboard, if we are travelling backwards, this will also remove it from any view its currently in
+	[userButton1 removeFromSuperview];
+	[userButton2 removeFromSuperview];
+	[userSuppliedView1 removeFromSuperview];
+	[userSuppliedView2 removeFromSuperview];
 	
 	item.buttonPressed_INTERNAL = ^(X_BUTTON* button)
 	{
 		NSInteger tag = button.tag;
 		
-		if (tag == 1)
-		{
-			NSLog(@"Firing segue: '%@'",SEGUE_ID_TOOLBAR_BUTTON_1);
-			[viewController performSegueWithIdentifier:SEGUE_ID_TOOLBAR_BUTTON_1 sender:self];
-		}
-		else if (tag == 2)
-		{
-			NSLog(@"Firing segue: '%@'",SEGUE_ID_TOOLBAR_BUTTON_2);
-			[viewController performSegueWithIdentifier:SEGUE_ID_TOOLBAR_BUTTON_2 sender:self];
-		}
+		NSLog(@"Firing segue: '%@'",SEGUE_ID_TOOLBAR_BUTTON_1);
+		[viewController performSegueWithIdentifier:[[NSString alloc] initWithFormat:@"%lu",tag + 1000] sender:self];
+		
 	};
 }
 
@@ -309,9 +260,11 @@ static const CGFloat kPushPopAnimationDuration = 0.2;
 							   push:(BOOL)push
 {
 	//  newController.view.autoresizingMask = self.view.autoresizingMask;
-	
+	NSLog(@"Last %@",lastController.title);
+	NSLog(@"Next %@",newController.title);
 	//See if we need to pull the information out of the storyboard and insert manually into
 	//our navigation item
+	
 	[self extractToolbarButtonsFromViewController:newController];
 	//	id<BFNavigationControllerDelegate>_delegate = self.delegate;
 	
@@ -389,7 +342,7 @@ static const CGFloat kPushPopAnimationDuration = 0.2;
 		[NSAnimationContext endGrouping];
 		
 		//        // Could have just called setCompletionHandler: on animation context if it was Lion only.
-		dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, kPushPopAnimationDuration * NSEC_PER_SEC);
+		dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, _pushPopAnimationDuration * NSEC_PER_SEC);
 		dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
 			[lastControllerImageView removeFromSuperview];
 			newController.view.hidden = NO;

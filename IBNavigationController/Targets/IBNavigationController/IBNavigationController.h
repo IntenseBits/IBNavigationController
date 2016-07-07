@@ -22,6 +22,9 @@
 #endif
 
 
+
+static const CGFloat kPushPopAnimationDuration = 1.2;
+
 /**
  * If using toolbar buttons defined in the storyboard, you must set the segue ID to this
  */
@@ -44,6 +47,10 @@
 
 @interface IBNavigationController : X_NAV_BASE<X_NAV_PROTOCOLS>
 
+/**
+ * Controls the amount of time taken to push and pop.
+ */
+@property (assign,nonatomic) CGFloat pushPopAnimationDuration;
 
 /**
  * Fired when user clicks on a bar button
