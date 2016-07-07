@@ -28,6 +28,11 @@ typedef void(^IBButtonPressed)(NSInteger tag);
  */
 @interface IBNavigationProxyViewController : X_VIEWCONTROLLER
 
+/**
+ * The length of time we perform our alpha animations on the title and buttons
+ */
+@property (assign,nonatomic) NSTimeInterval buttonAnimationDuration;
+
 @property (weak) IBOutlet NSStackView *stackViewRightButtons;
 @property (weak) IBOutlet NSTextField *lbTitle;
 

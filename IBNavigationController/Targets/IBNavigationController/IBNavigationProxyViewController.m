@@ -111,7 +111,7 @@
 #pragma mark <#Sectionname#>
 
 
-#define BUTTON_ANIMATION_TIME 0.15
+
 
 -(void)setNavigationItem:(IBNavigationItem *)navigationItem
 {
@@ -123,9 +123,10 @@
 	
 	
 	[NSAnimationContext runAnimationGroup:^(NSAnimationContext *context){
-		context.duration = BUTTON_ANIMATION_TIME;
+		context.duration = _buttonAnimationDuration;
 		context.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
 		self.stackViewRightButtons.animator.alphaValue = 0;
+		self.lbTitle.animator.alphaValue =0;
 	} completionHandler:^
 	{
 		if (_navigationItem)
@@ -159,9 +160,10 @@
 		
 		
 		[NSAnimationContext runAnimationGroup:^(NSAnimationContext *context){
-			context.duration = BUTTON_ANIMATION_TIME;
+			context.duration = _buttonAnimationDuration;
 			context.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
 			self.stackViewRightButtons.animator.alphaValue = 1;
+			self.lbTitle.animator.alphaValue =1;
 		} completionHandler:^
 		 {
 		

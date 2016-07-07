@@ -75,7 +75,13 @@
 	[super awakeFromNib];
 	
 	//set default if needed
-	self.pushPopAnimationDuration = _pushPopAnimationDuration > 0 ? _pushPopAnimationDuration : kPushPopAnimationDuration;
+	if (_pushPopAnimationDuration == 0)
+	{
+		_pushPopAnimationDuration = kPushPopAnimationDuration;
+		
+	}
+		
+	
 	
 #ifdef IB_TARGET_PLATFORM_MAC
 	
@@ -120,7 +126,7 @@
 	}
 	
 	IBNavigationProxyViewController* vc = [self newProxyViewController];
-	
+	vc.buttonAnimationDuration = kPushPopAnimationDuration / 2;
 	self.proxyVC = vc;
 	
 	
