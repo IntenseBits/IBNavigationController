@@ -137,7 +137,7 @@
                                             <constraint firstItem="wVt-IL-TV6" firstAttribute="centerX" secondItem="IDR-Yk-ulY" secondAttribute="centerX" id="W5d-0m-mTB"/>
                                             <constraint firstItem="btc-gc-LLr" firstAttribute="leading" secondItem="IDR-Yk-ulY" secondAttribute="leading" constant="100" id="XoC-vg-PNG"/>
                                             <constraint firstItem="btc-gc-LLr" firstAttribute="top" secondItem="atJ-0a-eFr" secondAttribute="bottom" constant="5" id="b49-sR-FkM"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="vV7-u6-ZmT"/>
+                                            <constraint firstAttribute="height" constant="150" id="vV7-u6-ZmT"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="backgroundColour">
@@ -222,7 +222,7 @@
                                         <subviews>
                                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="syX-LX-7dX">
                                                 <rect key="frame" x="98" y="51" width="306" height="57"/>
-                                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" title="Upto two buttons may be defined by specifying a value to be used the buttons title." id="Qax-ff-fs2">
+                                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" title="Up to two buttons may be defined by specifying a value to be used the buttons title." id="Qax-ff-fs2">
                                                     <font key="font" metaFont="system" size="15"/>
                                                     <color key="textColor" white="0.0" alpha="0.34283653850000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -250,7 +250,7 @@
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="syX-LX-7dX" secondAttribute="trailing" constant="100" id="Xsr-KQ-DGe"/>
                                             <constraint firstItem="Oy1-al-Qyu" firstAttribute="centerX" secondItem="pvu-BO-Lz9" secondAttribute="centerX" id="YjD-WQ-S5E"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="mdZ-Z1-chM"/>
+                                            <constraint firstAttribute="height" constant="150" id="mdZ-Z1-chM"/>
                                             <constraint firstItem="syX-LX-7dX" firstAttribute="top" secondItem="Oy1-al-Qyu" secondAttribute="bottom" constant="5" id="r92-yJ-MGl"/>
                                             <constraint firstItem="syX-LX-7dX" firstAttribute="leading" secondItem="pvu-BO-Lz9" secondAttribute="leading" constant="100" id="sMd-fa-5SW"/>
                                             <constraint firstItem="Oy1-al-Qyu" firstAttribute="top" secondItem="pvu-BO-Lz9" secondAttribute="top" constant="10" id="yP7-9x-Jm5"/>
@@ -340,9 +340,10 @@
                                         <rect key="frame" x="26" y="10" width="502" height="150"/>
                                         <subviews>
                                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="HWZ-GK-ScN">
-                                                <rect key="frame" x="98" y="70" width="306" height="38"/>
-                                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" title="Simple block that passes in NSbutton that was clicked" id="8SP-h7-dp8">
+                                                <rect key="frame" x="98" y="32" width="306" height="76"/>
+                                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" id="8SP-h7-dp8">
                                                     <font key="font" metaFont="system" size="15"/>
+                                                    <string key="title">Specify a block that will is called when user clicks on a button. The button is passed in to the block to enable us to respond appropriately</string>
                                                     <color key="textColor" white="0.0" alpha="0.34283653850000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
@@ -367,7 +368,7 @@
                                             </textField>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="6I0-Xh-WLL"/>
+                                            <constraint firstAttribute="height" constant="150" id="6I0-Xh-WLL"/>
                                             <constraint firstItem="33f-qh-lWI" firstAttribute="top" secondItem="Spu-uz-lij" secondAttribute="top" constant="10" id="MNX-Ng-HSV"/>
                                             <constraint firstItem="HWZ-GK-ScN" firstAttribute="leading" secondItem="Spu-uz-lij" secondAttribute="leading" constant="100" id="OxH-dM-uwg"/>
                                             <constraint firstAttribute="trailing" secondItem="HWZ-GK-ScN" secondAttribute="trailing" constant="100" id="q6E-lJ-L4f"/>
@@ -482,11 +483,14 @@
                                         <rect key="frame" x="26" y="10" width="502" height="150"/>
                                         <subviews>
                                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Y7t-dE-P6a">
-                                                <rect key="frame" x="98" y="70" width="306" height="38"/>
+                                                <rect key="frame" x="98" y="-6" width="306" height="114"/>
                                                 <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" id="Ih5-C4-AKE">
                                                     <font key="font" metaFont="system" size="15"/>
-                                                    <string key="title"> 1001 for button 1
-1002 for button 2</string>
+                                                    <string key="title">Add your button to the root view of the controller.
+
+Tag 1001 for Button 1
+Tag 1002 for Button 2
+</string>
                                                     <color key="textColor" white="0.0" alpha="0.34283653850000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
@@ -795,10 +799,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </customView>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="6mY-At-f80" userLabel="Detail Container" customClass="IBView">
-                                        <rect key="frame" x="26" y="10" width="502" height="166"/>
+                                        <rect key="frame" x="26" y="10" width="502" height="150"/>
                                         <subviews>
                                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="hey-g9-fOn">
-                                                <rect key="frame" x="98" y="67" width="306" height="57"/>
+                                                <rect key="frame" x="98" y="51" width="306" height="57"/>
                                                 <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" id="7co-Kg-UjE">
                                                     <font key="font" metaFont="system" size="15"/>
                                                     <string key="title">Make sure to set the segue ID to"1001" or "1002".
@@ -813,8 +817,8 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ahY-5H-0lr">
-                                                <rect key="frame" x="148" y="129" width="206" height="27"/>
-                                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" title="Custom Push segue" id="GhR-x0-y6S">
+                                                <rect key="frame" x="147" y="113" width="208" height="27"/>
+                                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" title="Custom Push Segue" id="GhR-x0-y6S">
                                                     <font key="font" metaFont="system" size="22"/>
                                                     <color key="textColor" white="0.2785429331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -854,9 +858,9 @@
                                     <constraint firstItem="6mY-At-f80" firstAttribute="trailing" secondItem="CVF-xc-GbB" secondAttribute="trailing" id="3VW-tx-YEp"/>
                                     <constraint firstItem="CVF-xc-GbB" firstAttribute="top" secondItem="fXs-HJ-zrB" secondAttribute="top" constant="10" id="Cca-3O-hKk"/>
                                     <constraint firstItem="6mY-At-f80" firstAttribute="leading" secondItem="CVF-xc-GbB" secondAttribute="leading" id="MDb-hU-7Gs"/>
-                                    <constraint firstItem="6mY-At-f80" firstAttribute="top" secondItem="CVF-xc-GbB" secondAttribute="bottom" constant="10" id="eZt-Sz-XMK"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CVF-xc-GbB" secondAttribute="trailing" constant="10" id="gRW-S4-DyS"/>
                                     <constraint firstItem="CVF-xc-GbB" firstAttribute="centerX" secondItem="fXs-HJ-zrB" secondAttribute="centerX" id="tP6-lI-DvD"/>
+                                    <constraint firstItem="6mY-At-f80" firstAttribute="top" relation="greaterThanOrEqual" secondItem="CVF-xc-GbB" secondAttribute="bottom" constant="26" id="vnZ-GX-jas"/>
                                     <constraint firstAttribute="bottom" secondItem="6mY-At-f80" secondAttribute="bottom" constant="10" id="vtD-EZ-L9A"/>
                                 </constraints>
                             </customView>

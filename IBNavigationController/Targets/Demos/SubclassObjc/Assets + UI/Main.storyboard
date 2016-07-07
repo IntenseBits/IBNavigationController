@@ -203,7 +203,7 @@
                                         <subviews>
                                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="syX-LX-7dX">
                                                 <rect key="frame" x="98" y="51" width="306" height="57"/>
-                                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" title="Upto two buttons may be defined by specifying a value to be used the buttons title." id="Qax-ff-fs2">
+                                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" title="Up to two buttons may be defined by specifying a value to be used the buttons title." id="Qax-ff-fs2">
                                                     <font key="font" metaFont="system" size="15"/>
                                                     <color key="textColor" white="0.0" alpha="0.34283653850000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -306,9 +306,10 @@
                                         <rect key="frame" x="26" y="10" width="502" height="150"/>
                                         <subviews>
                                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="HWZ-GK-ScN">
-                                                <rect key="frame" x="98" y="70" width="306" height="38"/>
-                                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" title="Simple block that passes in NSbutton that was clicked" id="8SP-h7-dp8">
+                                                <rect key="frame" x="98" y="32" width="306" height="76"/>
+                                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" id="8SP-h7-dp8">
                                                     <font key="font" metaFont="system" size="15"/>
+                                                    <string key="title">Specify a block that will is called when user clicks on a button. The button is passed in to the block to enable us to respond appropriately</string>
                                                     <color key="textColor" white="0.0" alpha="0.34283653850000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
@@ -433,11 +434,14 @@
                                         <rect key="frame" x="26" y="10" width="502" height="150"/>
                                         <subviews>
                                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Y7t-dE-P6a">
-                                                <rect key="frame" x="98" y="70" width="306" height="38"/>
+                                                <rect key="frame" x="98" y="-6" width="306" height="114"/>
                                                 <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" id="Ih5-C4-AKE">
                                                     <font key="font" metaFont="system" size="15"/>
-                                                    <string key="title"> 1001 for button 1
-1002 for button 2</string>
+                                                    <string key="title">Add your button to the root view of the controller.
+
+Tag 1001 for Button 1
+Tag 1002 for Button 2
+</string>
                                                     <color key="textColor" white="0.0" alpha="0.34283653850000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
@@ -550,10 +554,11 @@
                                         <rect key="frame" x="26" y="10" width="502" height="150"/>
                                         <subviews>
                                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="dmv-4j-FbK">
-                                                <rect key="frame" x="98" y="51" width="306" height="57"/>
+                                                <rect key="frame" x="98" y="13" width="306" height="95"/>
                                                 <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" id="xNS-K3-Bxh">
                                                     <font key="font" metaFont="system" size="15"/>
-                                                    <string key="title">Make sure to set the views identifier to "1001" or "1002"
+                                                    <string key="title">Add your view to the root view of the controller.
+Make sure to set the views identifier to "1001" or "1002"
 </string>
                                                     <color key="textColor" white="0.0" alpha="0.34283653850000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -743,9 +748,9 @@
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
                                             </textField>
-                                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahY-5H-0lr">
-                                                <rect key="frame" x="149" y="113" width="206" height="27"/>
-                                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" title="Custom Push segue" id="GhR-x0-y6S">
+                                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ahY-5H-0lr">
+                                                <rect key="frame" x="147" y="113" width="208" height="27"/>
+                                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" title="Custom Push Segue" id="GhR-x0-y6S">
                                                     <font key="font" metaFont="system" size="22"/>
                                                     <color key="textColor" white="0.2785429331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
