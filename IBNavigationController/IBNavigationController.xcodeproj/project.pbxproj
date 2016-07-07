@@ -10,6 +10,25 @@
 		830491E81D2D4F4B005830CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830491E71D2D4F4B005830CF /* Main.storyboard */; };
 		830491E91D2D7D8C005830CF /* MyCustomNavProxyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832412AC1D28079700551F81 /* MyCustomNavProxyViewController.xib */; };
 		830491EE1D2DB058005830CF /* IBNavigationProxyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830491EC1D2DB030005830CF /* IBNavigationProxyViewController.xib */; };
+		830492611D2E603B005830CF /* IBNavigationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832411911D27E9C900551F81 /* IBNavigationController.framework */; };
+		830492621D2E603B005830CF /* IBNavigationController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 832411911D27E9C900551F81 /* IBNavigationController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		830492661D2E603F005830CF /* IBNavigationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832411911D27E9C900551F81 /* IBNavigationController.framework */; };
+		830492671D2E603F005830CF /* IBNavigationController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 832411911D27E9C900551F81 /* IBNavigationController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8304926B1D2E6069005830CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830492411D2E5FD8005830CF /* Assets.xcassets */; };
+		8304926C1D2E6071005830CF /* ObjCAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830492441D2E5FD8005830CF /* ObjCAssets.xcassets */; };
+		8304926E1D2E6080005830CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 830492491D2E5FD8005830CF /* main.m */; };
+		830492711D2E608B005830CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830492501D2E5FD8005830CF /* ViewController.m */; };
+		830492721D2E6092005830CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830492521D2E5FD8005830CF /* Assets.xcassets */; };
+		830492731D2E6092005830CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830492521D2E5FD8005830CF /* Assets.xcassets */; };
+		830492741D2E609B005830CF /* IBNavigationProxyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830492431D2E5FD8005830CF /* IBNavigationProxyViewController.xib */; };
+		830492751D2E60AE005830CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830492421D2E5FD8005830CF /* Main.storyboard */; };
+		830492761D2E60B4005830CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8304923F1D2E5FD8005830CF /* AppDelegate.m */; };
+		830492771D2E6102005830CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830492541D2E5FD8005830CF /* AppDelegate.swift */; };
+		830492781D2E6102005830CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830492551D2E5FD8005830CF /* Assets.xcassets */; };
+		830492791D2E6102005830CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830492581D2E5FD8005830CF /* Main.storyboard */; };
+		8304927A1D2E6102005830CF /* IBNavigationProxyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830492591D2E5FD8005830CF /* IBNavigationProxyViewController.xib */; };
+		8304927B1D2E6102005830CF /* SwiftAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8304925A1D2E5FD8005830CF /* SwiftAssets.xcassets */; };
+		8304927E1D2E6107005830CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8304925E1D2E5FD8005830CF /* ViewController.swift */; };
 		832412271D27F3AA00551F81 /* BFNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8324121D1D27F3AA00551F81 /* BFNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		832412281D27F3AA00551F81 /* BFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8324121E1D27F3AA00551F81 /* BFNavigationController.m */; };
 		832412291D27F3AA00551F81 /* BFViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8324121F1D27F3AA00551F81 /* BFViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,6 +83,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		830492631D2E603B005830CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 832411881D27E9C900551F81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 832411901D27E9C900551F81;
+			remoteInfo = IBNavigationController;
+		};
+		830492681D2E603F005830CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 832411881D27E9C900551F81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 832411901D27E9C900551F81;
+			remoteInfo = IBNavigationController;
+		};
 		832412921D27F60800551F81 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 832411881D27E9C900551F81 /* Project object */;
@@ -88,6 +121,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		830492651D2E603B005830CF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				830492621D2E603B005830CF /* IBNavigationController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8304926A1D2E603F005830CF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				830492671D2E603F005830CF /* IBNavigationController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		832412941D27F60800551F81 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -126,6 +181,26 @@
 /* Begin PBXFileReference section */
 		830491E71D2D4F4B005830CF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		830491EC1D2DB030005830CF /* IBNavigationProxyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IBNavigationProxyViewController.xib; sourceTree = "<group>"; };
+		830491F31D2E5E87005830CF /* FeaturesDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeaturesDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		830492061D2E5EB3005830CF /* FeaturesDemoObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeaturesDemoObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8304923E1D2E5FD8005830CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8304923F1D2E5FD8005830CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		830492411D2E5FD8005830CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		830492421D2E5FD8005830CF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		830492431D2E5FD8005830CF /* IBNavigationProxyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IBNavigationProxyViewController.xib; sourceTree = "<group>"; };
+		830492441D2E5FD8005830CF /* ObjCAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ObjCAssets.xcassets; sourceTree = "<group>"; };
+		830492481D2E5FD8005830CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830492491D2E5FD8005830CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8304924F1D2E5FD8005830CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		830492501D2E5FD8005830CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		830492521D2E5FD8005830CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		830492541D2E5FD8005830CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		830492551D2E5FD8005830CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		830492571D2E5FD8005830CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830492581D2E5FD8005830CF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		830492591D2E5FD8005830CF /* IBNavigationProxyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IBNavigationProxyViewController.xib; sourceTree = "<group>"; };
+		8304925A1D2E5FD8005830CF /* SwiftAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SwiftAssets.xcassets; sourceTree = "<group>"; };
+		8304925E1D2E5FD8005830CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		832411911D27E9C900551F81 /* IBNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		832411E11D27F1B800551F81 /* SubclassSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubclassSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		832411F41D27F24F00551F81 /* SubclassObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubclassObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +266,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		830491F01D2E5E87005830CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830492661D2E603F005830CF /* IBNavigationController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830492031D2E5EB3005830CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830492611D2E603B005830CF /* IBNavigationController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8324118D1D27E9C900551F81 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -225,6 +316,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8304923C1D2E5FD8005830CF /* FeaturesDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8304923D1D2E5FD8005830CF /* ObjC */,
+				830492511D2E5FD8005830CF /* Shared */,
+				830492531D2E5FD8005830CF /* Swift */,
+			);
+			path = FeaturesDemo;
+			sourceTree = "<group>";
+		};
+		8304923D1D2E5FD8005830CF /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				8304923E1D2E5FD8005830CF /* AppDelegate.h */,
+				8304923F1D2E5FD8005830CF /* AppDelegate.m */,
+				830492401D2E5FD8005830CF /* Assets + UI */,
+				830492481D2E5FD8005830CF /* Info.plist */,
+				830492491D2E5FD8005830CF /* main.m */,
+				8304924A1D2E5FD8005830CF /* View Controllers */,
+			);
+			path = ObjC;
+			sourceTree = "<group>";
+		};
+		830492401D2E5FD8005830CF /* Assets + UI */ = {
+			isa = PBXGroup;
+			children = (
+				830492411D2E5FD8005830CF /* Assets.xcassets */,
+				830492421D2E5FD8005830CF /* Main.storyboard */,
+				830492431D2E5FD8005830CF /* IBNavigationProxyViewController.xib */,
+				830492441D2E5FD8005830CF /* ObjCAssets.xcassets */,
+			);
+			path = "Assets + UI";
+			sourceTree = "<group>";
+		};
+		8304924A1D2E5FD8005830CF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8304924F1D2E5FD8005830CF /* ViewController.h */,
+				830492501D2E5FD8005830CF /* ViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		830492511D2E5FD8005830CF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				830492521D2E5FD8005830CF /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		830492531D2E5FD8005830CF /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				830492541D2E5FD8005830CF /* AppDelegate.swift */,
+				830492551D2E5FD8005830CF /* Assets.xcassets */,
+				830492571D2E5FD8005830CF /* Info.plist */,
+				830492581D2E5FD8005830CF /* Main.storyboard */,
+				830492591D2E5FD8005830CF /* IBNavigationProxyViewController.xib */,
+				8304925A1D2E5FD8005830CF /* SwiftAssets.xcassets */,
+				8304925B1D2E5FD8005830CF /* View Controllers */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		8304925B1D2E5FD8005830CF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8304925E1D2E5FD8005830CF /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8304925F1D2E5FE1005830CF /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		830492601D2E5FF0005830CF /* SubclassDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8324123F1D27F4AE00551F81 /* SubclassObjc */,
+				832412511D27F4AE00551F81 /* SubclassShared */,
+				832412531D27F4AE00551F81 /* SubclassSwift */,
+			);
+			name = SubclassDemo;
+			sourceTree = "<group>";
+		};
 		832411871D27E9C900551F81 = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +423,8 @@
 				832411E11D27F1B800551F81 /* SubclassSwift.app */,
 				832411F41D27F24F00551F81 /* SubclassObjc.app */,
 				8324120C1D27F2C000551F81 /* DemoSwift.app */,
+				830491F31D2E5E87005830CF /* FeaturesDemoSwift.app */,
+				830492061D2E5EB3005830CF /* FeaturesDemoObjC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -290,21 +473,21 @@
 		832412311D27F4AE00551F81 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
-				832412321D27F4AE00551F81 /* DemoSwift */,
-				8324123F1D27F4AE00551F81 /* SubclassObjc */,
-				832412511D27F4AE00551F81 /* SubclassShared */,
-				832412531D27F4AE00551F81 /* SubclassSwift */,
+				832412321D27F4AE00551F81 /* HelloWorld Swift */,
+				8304923C1D2E5FD8005830CF /* FeaturesDemo */,
+				830492601D2E5FF0005830CF /* SubclassDemo */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
 		};
-		832412321D27F4AE00551F81 /* DemoSwift */ = {
+		832412321D27F4AE00551F81 /* HelloWorld Swift */ = {
 			isa = PBXGroup;
 			children = (
 				832412331D27F4AE00551F81 /* AppDelegate.swift */,
 				832412341D27F4AE00551F81 /* Assets + UI */,
 				8324123A1D27F4AE00551F81 /* Info.plist */,
 			);
+			name = "HelloWorld Swift";
 			path = DemoSwift;
 			sourceTree = "<group>";
 		};
@@ -366,6 +549,7 @@
 		832412531D27F4AE00551F81 /* SubclassSwift */ = {
 			isa = PBXGroup;
 			children = (
+				8304925F1D2E5FE1005830CF /* New Group */,
 				832412541D27F4AE00551F81 /* AppDelegate.swift */,
 				832412581D27F4AE00551F81 /* Info.plist */,
 				830491E71D2D4F4B005830CF /* Main.storyboard */,
@@ -443,6 +627,44 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		830491F21D2E5E87005830CF /* FeaturesDemoSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830491FF1D2E5E87005830CF /* Build configuration list for PBXNativeTarget "FeaturesDemoSwift" */;
+			buildPhases = (
+				830491EF1D2E5E87005830CF /* Sources */,
+				830491F01D2E5E87005830CF /* Frameworks */,
+				830491F11D2E5E87005830CF /* Resources */,
+				8304926A1D2E603F005830CF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				830492691D2E603F005830CF /* PBXTargetDependency */,
+			);
+			name = FeaturesDemoSwift;
+			productName = FeaturesDemoSwift;
+			productReference = 830491F31D2E5E87005830CF /* FeaturesDemoSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		830492051D2E5EB3005830CF /* FeaturesDemoObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830492171D2E5EB3005830CF /* Build configuration list for PBXNativeTarget "FeaturesDemoObjC" */;
+			buildPhases = (
+				830492021D2E5EB3005830CF /* Sources */,
+				830492031D2E5EB3005830CF /* Frameworks */,
+				830492041D2E5EB3005830CF /* Resources */,
+				830492651D2E603B005830CF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				830492641D2E603B005830CF /* PBXTargetDependency */,
+			);
+			name = FeaturesDemoObjC;
+			productName = FeaturesDemoObjC;
+			productReference = 830492061D2E5EB3005830CF /* FeaturesDemoObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
 		832411901D27E9C900551F81 /* IBNavigationController */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 832411991D27E9C900551F81 /* Build configuration list for PBXNativeTarget "IBNavigationController" */;
@@ -528,6 +750,12 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Intensebits;
 				TargetAttributes = {
+					830491F21D2E5E87005830CF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					830492051D2E5EB3005830CF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					832411901D27E9C900551F81 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -559,11 +787,37 @@
 				832411E01D27F1B800551F81 /* SubclassSwift */,
 				832411F31D27F24F00551F81 /* SubclassObjc */,
 				8324120B1D27F2C000551F81 /* DemoSwift */,
+				830491F21D2E5E87005830CF /* FeaturesDemoSwift */,
+				830492051D2E5EB3005830CF /* FeaturesDemoObjC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		830491F11D2E5E87005830CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830492791D2E6102005830CF /* Main.storyboard in Resources */,
+				830492781D2E6102005830CF /* Assets.xcassets in Resources */,
+				8304927A1D2E6102005830CF /* IBNavigationProxyViewController.xib in Resources */,
+				830492731D2E6092005830CF /* Assets.xcassets in Resources */,
+				8304927B1D2E6102005830CF /* SwiftAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830492041D2E5EB3005830CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8304926C1D2E6071005830CF /* ObjCAssets.xcassets in Resources */,
+				830492721D2E6092005830CF /* Assets.xcassets in Resources */,
+				830492751D2E60AE005830CF /* Main.storyboard in Resources */,
+				830492741D2E609B005830CF /* IBNavigationProxyViewController.xib in Resources */,
+				8304926B1D2E6069005830CF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8324118F1D27E9C900551F81 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -607,6 +861,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		830491EF1D2E5E87005830CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8304927E1D2E6107005830CF /* ViewController.swift in Sources */,
+				830492771D2E6102005830CF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830492021D2E5EB3005830CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830492711D2E608B005830CF /* ViewController.m in Sources */,
+				8304926E1D2E6080005830CF /* main.m in Sources */,
+				830492761D2E60B4005830CF /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8324118C1D27E9C900551F81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -659,6 +932,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		830492641D2E603B005830CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 832411901D27E9C900551F81 /* IBNavigationController */;
+			targetProxy = 830492631D2E603B005830CF /* PBXContainerItemProxy */;
+		};
+		830492691D2E603F005830CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 832411901D27E9C900551F81 /* IBNavigationController */;
+			targetProxy = 830492681D2E603F005830CF /* PBXContainerItemProxy */;
+		};
 		832412931D27F60800551F81 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 832411901D27E9C900551F81 /* IBNavigationController */;
@@ -688,6 +971,55 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		830492001D2E5E87005830CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Targets/Demos/FeaturesDemo/Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.intensebits.FeaturesDemoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		830492011D2E5E87005830CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Targets/Demos/FeaturesDemo/Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.intensebits.FeaturesDemoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		830492181D2E5EB3005830CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Targets/Demos/FeaturesDemo/ObjC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.intensebits.FeaturesDemoObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		830492191D2E5EB3005830CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Targets/Demos/FeaturesDemo/ObjC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.intensebits.FeaturesDemoObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		832411971D27E9C900551F81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -890,6 +1222,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		830491FF1D2E5E87005830CF /* Build configuration list for PBXNativeTarget "FeaturesDemoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830492001D2E5E87005830CF /* Debug */,
+				830492011D2E5E87005830CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		830492171D2E5EB3005830CF /* Build configuration list for PBXNativeTarget "FeaturesDemoObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830492181D2E5EB3005830CF /* Debug */,
+				830492191D2E5EB3005830CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		8324118B1D27E9C900551F81 /* Build configuration list for PBXProject "IBNavigationController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
