@@ -123,6 +123,8 @@
 	
 	self.proxyVC = vc;
 	
+	
+	
 	__weak typeof(self) this= self;
 	vc.buttonPressed = ^(NSInteger buttonTag)
 	{
@@ -220,11 +222,6 @@
 	X_VIEW* userSuppliedView1 = [self extractUserDefinedViewWithIdentifier:TAG_TO_ID(TAG_TOOLBAR_BUTTON_1) fromViewController:viewController];
 	X_VIEW* userSuppliedView2 = [self extractUserDefinedViewWithIdentifier:TAG_TO_ID(TAG_TOOLBAR_BUTTON_2) fromViewController:viewController];
 	
-	//for when we are popping back, we have already extracted the view from the view controller
-	//CB: Dont think we need this anymore as we just are extracting stuff here, not actually using it
-//	userSuppliedView1 = userSuppliedView1 ? userSuppliedView1 : item.userSuppliedToolBarView1;
-//	userSuppliedView2 = userSuppliedView2 ? userSuppliedView2 : item.userSuppliedToolBarView2;
-//	
 	//store these for adding to the toolbar
 	item.userSuppliedToolBarView1 = userSuppliedView1 ? userSuppliedView1 : item.userSuppliedToolBarView1;
 	item.userSuppliedToolBarView2 = userSuppliedView2 ? userSuppliedView2 : item.userSuppliedToolBarView2;
@@ -268,10 +265,9 @@
 	[self extractToolbarButtonsFromViewController:newController];
 	//	id<BFNavigationControllerDelegate>_delegate = self.delegate;
 	
-	// Call delegate
-	//	if (_delegate && [_delegate respondsToSelector:@selector(navigationController:willShowViewController:animated:)]) {
-	//		[_delegate navigationController:self willShowViewController:newController animated:animated];
-	//	}
+	//Call our proxy
+	[_proxyVC navigationController:self willShowViewController:newController animated:animated];
+	
 	
 	// New controller will appear
 	if ([newController respondsToSelector:@selector(viewWillAppear:)]) {
@@ -289,10 +285,8 @@
 	
 	// Completion inline Block
 	void(^navigationCompleted)(BOOL) = ^(BOOL animated) {
-		// Call delegate
-		//		if (_delegate && [_delegate respondsToSelector:@selector(navigationController:didShowViewController:animated:)]) {
-		//			[_delegate navigationController:self didShowViewController:newController animated:animated];
-		//		}
+		//Call our proxy
+		[_proxyVC navigationController:self didShowViewController:newController animated:animated];
 		
 		// New controller did appear
 		if ([newController respondsToSelector: @selector(viewDidAppear:)]) {
@@ -308,6 +302,9 @@
 	//hide our back button if we cant go back
 	self.proxyVC.backButton.hidden = ([self.viewControllers count] == 1);
 	
+	//dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((_pushPopAnimationDuration / 2.0f) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+		self.proxyVC.navigationItem = newController.navItem;
+	//});
 	
 	
 	if (animated)
@@ -348,7 +345,7 @@
 			newController.view.hidden = NO;
 			[newControllerImageView removeFromSuperview];
 			
-			self.proxyVC.navigationItem = newController.navItem;
+			
 			
 			newController.view.frame = self.view.bounds;
 			navigationCompleted(animated);

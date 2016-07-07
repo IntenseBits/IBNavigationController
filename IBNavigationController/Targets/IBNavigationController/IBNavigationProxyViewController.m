@@ -8,7 +8,7 @@
 
 #import "IBNavigationProxyViewController.h"
 #import "IBNavigationItem.h"
-
+@import QuartzCore;
 
 @interface IBNavigationProxyViewController ()
 
@@ -111,6 +111,7 @@
 #pragma mark <#Sectionname#>
 
 
+#define BUTTON_ANIMATION_TIME 0.15
 
 -(void)setNavigationItem:(IBNavigationItem *)navigationItem
 {
@@ -120,33 +121,59 @@
 	NSAssert(_lbTitle, @"Nib file incorrect, no title label");
 	NSAssert(_stackViewRightButtons, @"Nib file incorrect, no toolbar stack view");
 	
-	if (_navigationItem)
+	
+	[NSAnimationContext runAnimationGroup:^(NSAnimationContext *context){
+		context.duration = BUTTON_ANIMATION_TIME;
+		context.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+		self.stackViewRightButtons.animator.alphaValue = 0;
+	} completionHandler:^
 	{
-		//Remove custom views if needed
-		[_navigationItem.userSuppliedToolBarView1 removeFromSuperview];
-		[_navigationItem.userSuppliedToolBarView2 removeFromSuperview];
-	}
+		if (_navigationItem)
+		{
+			//Remove custom views if needed
+			[_navigationItem.userSuppliedToolBarView1 removeFromSuperview];
+			[_navigationItem.userSuppliedToolBarView2 removeFromSuperview];
+		}
+		
+		_navigationItem = navigationItem;
+		
+		if (navigationItem.title)
+		{
+			setXLabelText(_lbTitle, navigationItem.title);
+		}
+		else
+			setXLabelText(_lbTitle, @"");
+		
+		
+		NSString* userButtonTitle1 = navigationItem.button1Title;
+		NSString* userButtonTitle2 = navigationItem.button2Title;
+		X_VIEW* userView1 = navigationItem.userSuppliedToolBarView1;
+		X_VIEW* userView2 = navigationItem.userSuppliedToolBarView2;
+		NSButton* userButton1 = navigationItem.userSuppliedButton1;
+		NSButton* userButton2 = navigationItem.userSuppliedButton2;
+		
+		//We configure our toolbar items based on information from the user supplied storyboard viewcontroller
+		[self dealWithButton:_button1 userButton:userButton1 userTitle:userButtonTitle1 userView:userView1];
+		[self dealWithButton:_button2 userButton:userButton2 userTitle:userButtonTitle2 userView:userView2];
+		
+		
+		
+		[NSAnimationContext runAnimationGroup:^(NSAnimationContext *context){
+			context.duration = BUTTON_ANIMATION_TIME;
+			context.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+			self.stackViewRightButtons.animator.alphaValue = 1;
+		} completionHandler:^
+		 {
+		
+		 }];
+		
+	}];
 	
-	_navigationItem = navigationItem;
-	
-	if (navigationItem.title)
-	{
-		setXLabelText(_lbTitle, navigationItem.title);
-	}
-	else
-		setXLabelText(_lbTitle, @"");
 	
 	
-	NSString* userButtonTitle1 = navigationItem.button1Title;
-	NSString* userButtonTitle2 = navigationItem.button2Title;
-	X_VIEW* userView1 = navigationItem.userSuppliedToolBarView1;
-	X_VIEW* userView2 = navigationItem.userSuppliedToolBarView2;
-	NSButton* userButton1 = navigationItem.userSuppliedButton1;
-	NSButton* userButton2 = navigationItem.userSuppliedButton2;
 	
-	//We configure our toolbar items based on information from the user supplied storyboard viewcontroller
-	[self dealWithButton:_button1 userButton:userButton1 userTitle:userButtonTitle1 userView:userView1];
-	[self dealWithButton:_button2 userButton:userButton2 userTitle:userButtonTitle2 userView:userView2];
+	
+	
 	
 	
 	
@@ -160,6 +187,17 @@
 	}
 	
 	[self.navigationItem onButtonPressed: button];
+	
+}
+
+
+-(void)navigationController:(IBNavigationController *)navigationController willShowViewController:(NSViewController *)viewController animated:(BOOL)animated
+{
+	
+}
+
+-(void)navigationController:(IBNavigationController *)navigationController didShowViewController:(NSViewController *)viewController animated:(BOOL)animated
+{
 	
 }
 

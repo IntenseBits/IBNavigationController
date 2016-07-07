@@ -23,7 +23,7 @@
 
 
 
-static const CGFloat kPushPopAnimationDuration = 1.2;
+static const CGFloat kPushPopAnimationDuration = 0.2;
 
 /**
  * If using toolbar buttons defined in the storyboard, you must set the segue ID to this

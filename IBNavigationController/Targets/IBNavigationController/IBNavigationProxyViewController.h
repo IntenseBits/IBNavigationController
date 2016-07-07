@@ -13,7 +13,7 @@
 #define BF_BUTTON_TAG_BUTTON_1 1
 #define BF_BUTTON_TAG_BUTTON_2 2
 
-@class IBNavigationItem;
+@class IBNavigationItem,IBNavigationController;
 
 typedef void(^IBButtonPressed)(NSInteger tag);
 
@@ -38,5 +38,22 @@ typedef void(^IBButtonPressed)(NSInteger tag);
 
 @property (weak,nonatomic) IBNavigationItem* navigationItem;
 @property (copy,nonatomic) IBButtonPressed buttonPressed;
+
+#pragma mark -
+#pragma mark BFNavigationController Delegate
+
+/**
+ *  Sent to the receiver just after the navigation controller displays a view controller’s view and navigation item properties.
+ */
+- (void)navigationController:(IBNavigationController *)navigationController
+	   didShowViewController:(NSViewController *)viewController
+					animated:(BOOL)animated;
+
+/**
+ *  Sent to the receiver just before the navigation controller displays a view controller’s view and navigation item properties.
+ */
+- (void)navigationController:(IBNavigationController *)navigationController
+	  willShowViewController:(NSViewController *)viewController
+					animated:(BOOL)animated;
 
 @end
