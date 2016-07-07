@@ -16,16 +16,19 @@
 		830492671D2E603F005830CF /* IBNavigationController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 832411911D27E9C900551F81 /* IBNavigationController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8304926B1D2E6069005830CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830492411D2E5FD8005830CF /* Assets.xcassets */; };
 		8304926C1D2E6071005830CF /* ObjCAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830492441D2E5FD8005830CF /* ObjCAssets.xcassets */; };
-		8304926D1D2E6077005830CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830492451D2E5FD8005830CF /* Main.storyboard */; };
 		8304926E1D2E6080005830CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 830492491D2E5FD8005830CF /* main.m */; };
-		8304926F1D2E608B005830CF /* MyCustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8304924C1D2E5FD8005830CF /* MyCustomNavigationController.m */; };
-		830492701D2E608B005830CF /* MyCustomNavProxyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8304924E1D2E5FD8005830CF /* MyCustomNavProxyViewController.m */; };
 		830492711D2E608B005830CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830492501D2E5FD8005830CF /* ViewController.m */; };
 		830492721D2E6092005830CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830492521D2E5FD8005830CF /* Assets.xcassets */; };
 		830492731D2E6092005830CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830492521D2E5FD8005830CF /* Assets.xcassets */; };
-		830492741D2E609B005830CF /* MyCustomNavProxyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830492431D2E5FD8005830CF /* MyCustomNavProxyViewController.xib */; };
+		830492741D2E609B005830CF /* IBNavigationProxyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830492431D2E5FD8005830CF /* IBNavigationProxyViewController.xib */; };
 		830492751D2E60AE005830CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830492421D2E5FD8005830CF /* Main.storyboard */; };
 		830492761D2E60B4005830CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8304923F1D2E5FD8005830CF /* AppDelegate.m */; };
+		830492771D2E6102005830CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830492541D2E5FD8005830CF /* AppDelegate.swift */; };
+		830492781D2E6102005830CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830492551D2E5FD8005830CF /* Assets.xcassets */; };
+		830492791D2E6102005830CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830492581D2E5FD8005830CF /* Main.storyboard */; };
+		8304927A1D2E6102005830CF /* IBNavigationProxyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830492591D2E5FD8005830CF /* IBNavigationProxyViewController.xib */; };
+		8304927B1D2E6102005830CF /* SwiftAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8304925A1D2E5FD8005830CF /* SwiftAssets.xcassets */; };
+		8304927E1D2E6107005830CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8304925E1D2E5FD8005830CF /* ViewController.swift */; };
 		832412271D27F3AA00551F81 /* BFNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8324121D1D27F3AA00551F81 /* BFNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		832412281D27F3AA00551F81 /* BFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8324121E1D27F3AA00551F81 /* BFNavigationController.m */; };
 		832412291D27F3AA00551F81 /* BFViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8324121F1D27F3AA00551F81 /* BFViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -184,28 +187,19 @@
 		8304923F1D2E5FD8005830CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		830492411D2E5FD8005830CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		830492421D2E5FD8005830CF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		830492431D2E5FD8005830CF /* MyCustomNavProxyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomNavProxyViewController.xib; sourceTree = "<group>"; };
+		830492431D2E5FD8005830CF /* IBNavigationProxyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IBNavigationProxyViewController.xib; sourceTree = "<group>"; };
 		830492441D2E5FD8005830CF /* ObjCAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ObjCAssets.xcassets; sourceTree = "<group>"; };
-		830492461D2E5FD8005830CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		830492471D2E5FD8005830CF /* IBNavigationController copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IBNavigationController copy2-Info.plist"; sourceTree = "<group>"; };
 		830492481D2E5FD8005830CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		830492491D2E5FD8005830CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8304924B1D2E5FD8005830CF /* MyCustomNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCustomNavigationController.h; sourceTree = "<group>"; };
-		8304924C1D2E5FD8005830CF /* MyCustomNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCustomNavigationController.m; sourceTree = "<group>"; };
-		8304924D1D2E5FD8005830CF /* MyCustomNavProxyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCustomNavProxyViewController.h; sourceTree = "<group>"; };
-		8304924E1D2E5FD8005830CF /* MyCustomNavProxyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCustomNavProxyViewController.m; sourceTree = "<group>"; };
 		8304924F1D2E5FD8005830CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		830492501D2E5FD8005830CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		830492521D2E5FD8005830CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		830492541D2E5FD8005830CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		830492551D2E5FD8005830CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		830492561D2E5FD8005830CF /* IBNavigationController copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IBNavigationController copy-Info.plist"; sourceTree = "<group>"; };
 		830492571D2E5FD8005830CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		830492581D2E5FD8005830CF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		830492591D2E5FD8005830CF /* MyCustomNavProxyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomNavProxyViewController.xib; sourceTree = "<group>"; };
+		830492591D2E5FD8005830CF /* IBNavigationProxyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IBNavigationProxyViewController.xib; sourceTree = "<group>"; };
 		8304925A1D2E5FD8005830CF /* SwiftAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SwiftAssets.xcassets; sourceTree = "<group>"; };
-		8304925C1D2E5FD8005830CF /* MyCustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomNavigationController.swift; sourceTree = "<group>"; };
-		8304925D1D2E5FD8005830CF /* MyCustomNavProxyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomNavProxyViewController.swift; sourceTree = "<group>"; };
 		8304925E1D2E5FD8005830CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		832411911D27E9C900551F81 /* IBNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		832411E11D27F1B800551F81 /* SubclassSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubclassSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -338,8 +332,6 @@
 				8304923E1D2E5FD8005830CF /* AppDelegate.h */,
 				8304923F1D2E5FD8005830CF /* AppDelegate.m */,
 				830492401D2E5FD8005830CF /* Assets + UI */,
-				830492451D2E5FD8005830CF /* Main.storyboard */,
-				830492471D2E5FD8005830CF /* IBNavigationController copy2-Info.plist */,
 				830492481D2E5FD8005830CF /* Info.plist */,
 				830492491D2E5FD8005830CF /* main.m */,
 				8304924A1D2E5FD8005830CF /* View Controllers */,
@@ -352,7 +344,7 @@
 			children = (
 				830492411D2E5FD8005830CF /* Assets.xcassets */,
 				830492421D2E5FD8005830CF /* Main.storyboard */,
-				830492431D2E5FD8005830CF /* MyCustomNavProxyViewController.xib */,
+				830492431D2E5FD8005830CF /* IBNavigationProxyViewController.xib */,
 				830492441D2E5FD8005830CF /* ObjCAssets.xcassets */,
 			);
 			path = "Assets + UI";
@@ -361,10 +353,6 @@
 		8304924A1D2E5FD8005830CF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8304924B1D2E5FD8005830CF /* MyCustomNavigationController.h */,
-				8304924C1D2E5FD8005830CF /* MyCustomNavigationController.m */,
-				8304924D1D2E5FD8005830CF /* MyCustomNavProxyViewController.h */,
-				8304924E1D2E5FD8005830CF /* MyCustomNavProxyViewController.m */,
 				8304924F1D2E5FD8005830CF /* ViewController.h */,
 				830492501D2E5FD8005830CF /* ViewController.m */,
 			);
@@ -384,10 +372,9 @@
 			children = (
 				830492541D2E5FD8005830CF /* AppDelegate.swift */,
 				830492551D2E5FD8005830CF /* Assets.xcassets */,
-				830492561D2E5FD8005830CF /* IBNavigationController copy-Info.plist */,
 				830492571D2E5FD8005830CF /* Info.plist */,
 				830492581D2E5FD8005830CF /* Main.storyboard */,
-				830492591D2E5FD8005830CF /* MyCustomNavProxyViewController.xib */,
+				830492591D2E5FD8005830CF /* IBNavigationProxyViewController.xib */,
 				8304925A1D2E5FD8005830CF /* SwiftAssets.xcassets */,
 				8304925B1D2E5FD8005830CF /* View Controllers */,
 			);
@@ -397,8 +384,6 @@
 		8304925B1D2E5FD8005830CF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8304925C1D2E5FD8005830CF /* MyCustomNavigationController.swift */,
-				8304925D1D2E5FD8005830CF /* MyCustomNavProxyViewController.swift */,
 				8304925E1D2E5FD8005830CF /* ViewController.swift */,
 			);
 			path = "View Controllers";
@@ -813,7 +798,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830492791D2E6102005830CF /* Main.storyboard in Resources */,
+				830492781D2E6102005830CF /* Assets.xcassets in Resources */,
+				8304927A1D2E6102005830CF /* IBNavigationProxyViewController.xib in Resources */,
 				830492731D2E6092005830CF /* Assets.xcassets in Resources */,
+				8304927B1D2E6102005830CF /* SwiftAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -821,11 +810,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8304926D1D2E6077005830CF /* Main.storyboard in Resources */,
 				8304926C1D2E6071005830CF /* ObjCAssets.xcassets in Resources */,
 				830492721D2E6092005830CF /* Assets.xcassets in Resources */,
 				830492751D2E60AE005830CF /* Main.storyboard in Resources */,
-				830492741D2E609B005830CF /* MyCustomNavProxyViewController.xib in Resources */,
+				830492741D2E609B005830CF /* IBNavigationProxyViewController.xib in Resources */,
 				8304926B1D2E6069005830CF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -877,6 +865,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8304927E1D2E6107005830CF /* ViewController.swift in Sources */,
+				830492771D2E6102005830CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,8 +874,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8304926F1D2E608B005830CF /* MyCustomNavigationController.m in Sources */,
-				830492701D2E608B005830CF /* MyCustomNavProxyViewController.m in Sources */,
 				830492711D2E608B005830CF /* ViewController.m in Sources */,
 				8304926E1D2E6080005830CF /* main.m in Sources */,
 				830492761D2E60B4005830CF /* AppDelegate.m in Sources */,
@@ -972,14 +960,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		830492451D2E5FD8005830CF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				830492461D2E5FD8005830CF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		832412361D27F4AE00551F81 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

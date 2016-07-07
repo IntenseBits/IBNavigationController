@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-166" y="-282"/>
         </scene>
-        <!--My Custom Navigation Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="tf0-qm-Tu0">
             <objects>
-                <tabViewController tabStyle="unspecified" id="V2t-bD-DEc" customClass="MyCustomNavigationController" customModule="SubclassSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <tabViewController tabStyle="unspecified" id="V2t-bD-DEc" customClass="IBNavigationController" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem id="oa5-uo-tSm"/>
                         <tabViewItem id="0V6-r9-I1l"/>
@@ -45,7 +45,7 @@
                 </tabViewController>
                 <customObject id="2IR-ZU-fKc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-156" y="355"/>
+            <point key="canvasLocation" x="-156" y="328.5"/>
         </scene>
         <!--Welcome!-->
         <scene sceneID="gWI-2t-gvD">
@@ -182,7 +182,7 @@
         <!--Toolbar Buttons-->
         <scene sceneID="BTM-AX-eFb">
             <objects>
-                <viewController title="Toolbar Buttons" id="4Mr-if-IXa" customClass="ViewController" customModule="SubclassSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Toolbar Buttons" id="4Mr-if-IXa" customClass="ViewController" customModule="FeaturesDemoSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="J6p-Tg-xoJ">
                         <rect key="frame" x="0.0" y="0.0" width="522" height="482"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -579,7 +579,7 @@ Tag 1002 for Button 2
         <!--Custom Views-->
         <scene sceneID="EJw-sX-p06">
             <objects>
-                <viewController title="Custom Views" storyboardIdentifier="CustomViews" id="dfy-mW-sws" customClass="ViewController" customModule="SubclassSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Custom Views" storyboardIdentifier="CustomViews" id="dfy-mW-sws" customClass="ViewController" customModule="FeaturesDemoSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="zVy-zr-td0">
                         <rect key="frame" x="0.0" y="0.0" width="554" height="482"/>
                         <autoresizingMask key="autoresizingMask"/>

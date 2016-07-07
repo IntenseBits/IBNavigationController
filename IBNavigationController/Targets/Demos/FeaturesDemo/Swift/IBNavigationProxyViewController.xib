@@ -45,8 +45,8 @@
                                                         <action selector="buttonPressed:" target="-2" id="Pcg-n1-32d"/>
                                                     </connections>
                                                 </button>
-                                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pVD-oJ-3Lh">
-                                                    <rect key="frame" x="196.5" y="5" width="43" height="24"/>
+                                                <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pVD-oJ-3Lh">
+                                                    <rect key="frame" x="196" y="5" width="43" height="24"/>
                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Title" usesSingleLineMode="YES" id="7gZ-ai-f1P">
                                                         <font key="font" metaFont="system" size="20"/>
                                                         <color key="textColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
