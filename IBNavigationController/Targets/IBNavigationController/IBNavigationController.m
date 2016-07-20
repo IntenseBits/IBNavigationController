@@ -12,6 +12,7 @@
 #import "XViewController+IBNavigationController.h"
 #import "BFViewController.h"
 #import "IBNavigationItem.h"
+@import QuartzCore;
 
 //We didnt find a view matching that tag so try and find a view with a matching identifier
 
@@ -36,7 +37,7 @@
 
 @interface IBNavigationController ()
 {
-	
+	NSTabViewController* old;
 }
 
 /**
@@ -46,7 +47,7 @@
 
 @end
 @implementation IBNavigationController
-
+@synthesize delegate=_delegate;
 
 
 
@@ -69,7 +70,20 @@
 	
 	return vc;
 }
-
+//
+//-(id)awakeAfterUsingCoder:(NSCoder *)aDecoder
+//{
+//	old = [super awakeAfterUsingCoder:aDecoder];
+//	
+//	NSViewController* c = [[NSTabViewController alloc] init];
+//	
+//	
+//	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//		[old.view removeFromSuperview];
+//	});
+//	id b = self.tabViewItems;
+//	return c;
+//}
 -(void)awakeFromNib
 {
 	[super awakeFromNib];
@@ -111,11 +125,25 @@
 	self.delegate = self;
 	
 }
+-(void)viewDidLoad
+{
+	[super viewDidLoad];
+	self.view.layer.backgroundColor = [NSColor redColor].CGColor;
+}
+
+-(NSViewController *)topViewController
+{
+	NSViewController* vc =[super topViewController];
+	//probably dont need this, not sure if its called
+	if (!vc && self.tabViewItems.count)
+	{
+		vc = self.tabViewItems[0].viewController;
+	}
+	
+	return vc;
+}
 -(void)commonInitWithRootViewController:(X_VIEWCONTROLLER *)viewController
 {
-	
-	
-	
 	NSMutableArray* array = @[].mutableCopy;
 	[array addObject: viewController];
 	self.viewControllers = array;
@@ -162,19 +190,39 @@
 	//our navigation item
 	[self extractToolbarButtonsFromViewController:vc];
 	
-	
-	
-	[self.view addSubviewWithAutoSizeConstraints:vc.view];
+
 	
 	//vc.view.frame = CGRectMake(0, 0, 100, 100);
 	
-	//otherwise we get strangeness the first time we push.
+//	//otherwise we get strangeness the first time we push.
+	//dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+		
 	dispatch_async(dispatch_get_main_queue(), ^{
+		
+	
+	//[self.tabView removeFromSuperview];
+	NSTabView* tabView =(NSTabView*) self.tabView;
+	
+	NSLog(@"MEH %lu",tabView.subviews.count);
+	//because sometimes tabview isnt initialised with content. Weird
+	NSView* destView = tabView.subviews.count > 0 ? tabView : self.view;
+	
+		[viewController.view removeFromSuperview];
+		[destView addSubviewWithAutoSizeConstraints:vc.view];
+		
 		[self.proxyVC.containerView addSubviewWithAutoSizeConstraints:self.topViewController.view];
 		self.proxyVC.backButton.hidden = YES;
+		
+		
+#ifdef IB_TARGET_PLATFORM_MAC
+		[self.view setNeedsLayout:YES];
+#else
+		[self.view setNeedsLayout];
+#endif
 	});
 	
 	
+	//NSLog(@")
 	
 	self.proxyVC.navigationItem = viewController.navItem;
 	
@@ -263,8 +311,8 @@
 							   push:(BOOL)push
 {
 	//  newController.view.autoresizingMask = self.view.autoresizingMask;
-	NSLog(@"Last %@",lastController.title);
-	NSLog(@"Next %@",newController.title);
+	//NSLog(@"Last %@",lastController.title);
+	//NSLog(@"Next %@",newController.title);
 	//See if we need to pull the information out of the storyboard and insert manually into
 	//our navigation item
 	

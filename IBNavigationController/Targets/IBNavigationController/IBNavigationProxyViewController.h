@@ -43,6 +43,8 @@ typedef void(^IBButtonPressed)(NSInteger tag);
 
 @property (weak,nonatomic) IBNavigationItem* navigationItem;
 @property (copy,nonatomic) IBButtonPressed buttonPressed;
+//@property (weak) IBOutlet NSView *containerView;
+@property (weak) IBOutlet NSView *topBar;
 
 #pragma mark -
 #pragma mark BFNavigationController Delegate

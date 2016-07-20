@@ -16,7 +16,7 @@ static const CGFloat kPushPopAnimationDuration = 0.2;
 
 @interface BFNavigationController ()
 @property (weak) IBOutlet NSView *containerView;
-@property (weak) IBOutlet NSBox *topBar;
+@property (weak) IBOutlet NSView *topBar;
 
 - (void)_setViewControllers:(NSArray *)controllers animated:(BOOL)animated;
 - (void)_navigateFromViewController:(NSViewController *)lastController
@@ -36,7 +36,7 @@ static const CGFloat kPushPopAnimationDuration = 0.2;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 #pragma mark - Init Methods
-//CB: dont need this
+//CB: dont need this, we use IBNavigationController version
 //-(id)initWithCoder:(NSCoder *)aDecoder
 //{
 //	if (self = [self initWithFrame:NSZeroRect rootViewController:nil])

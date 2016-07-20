@@ -262,7 +262,6 @@
 		832412B81D280FE200551F81 /* IBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBView.m; sourceTree = "<group>"; };
 		832412E01D2A691300551F81 /* IBNavigationController copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "IBNavigationController copy-Info.plist"; path = "/Users/chris/projects/IntenseBits/Reusable/utility-frameworks/IBNavigationController/IBNavigationController/IBNavigationController copy-Info.plist"; sourceTree = "<absolute>"; };
 		832412E11D2A6A0C00551F81 /* IBCrossPlatformHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBCrossPlatformHelpers.h; sourceTree = "<group>"; };
-		8367A01D1D2ADE3700502C72 /* IBNavigationController copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "IBNavigationController copy2-Info.plist"; path = "/Users/chris/projects/IntenseBits/Reusable/utility-frameworks/IBNavigationController/IBNavigationController/IBNavigationController copy2-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -412,7 +411,6 @@
 				832412301D27F4AE00551F81 /* Targets */,
 				832411921D27E9C900551F81 /* Products */,
 				8324121B1D27F3AA00551F81 /* Third Party */,
-				8367A01D1D2ADE3700502C72 /* IBNavigationController copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1229,6 +1227,7 @@
 				830492011D2E5E87005830CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		830492171D2E5EB3005830CF /* Build configuration list for PBXNativeTarget "FeaturesDemoObjC" */ = {
 			isa = XCConfigurationList;
@@ -1237,6 +1236,7 @@
 				830492191D2E5EB3005830CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8324118B1D27E9C900551F81 /* Build configuration list for PBXProject "IBNavigationController" */ = {
 			isa = XCConfigurationList;

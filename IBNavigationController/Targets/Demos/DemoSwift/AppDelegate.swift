@@ -9,8 +9,10 @@
 import Cocoa
 
 @NSApplicationMain
+
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+	//@IBOutlet weak var appModel: ApplicationModel
 
 
 	func applicationDidFinishLaunching(aNotification: NSNotification) {
